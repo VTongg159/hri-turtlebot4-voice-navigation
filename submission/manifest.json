@@ -176,6 +176,22 @@
     "figures/pairs_lab_pixel_map_coordinates.svg": {
       "bytes": 119407,
       "sha256": "6bfcba3cb00392fd03e01ee090aa2311f8b7e617576ee90d9e0d93a350d936be"
+    },
+    "figures/figure7_push_to_talk_reconstructed.png": {
+      "bytes": 131996,
+      "sha256": "c8ea0ee7edff42700cde1afee54249d498e1c80099287a9335e375e670ce1113"
+    },
+    "figures/figure7_push_to_talk_reconstructed.txt": {
+      "bytes": 1485,
+      "sha256": "cb42a445bd84663d01427f33daec51baa096e395ca8113091c8257d12f1c3e9e"
+    },
+    "evidence/filmed_voice_terminal_excerpt.txt": {
+      "bytes": 612,
+      "sha256": "a34acb8d9776a2bc0fac32bc1e75b5bd21852622acc4303dd04e507bbd6b6cf2"
+    },
+    "evidence/figure7_provenance.json": {
+      "bytes": 1213,
+      "sha256": "e73514570c9d496ad234e4082bfdd1f5f2b465eba0c7b8650e978c94627b5c80"
     }
   }
 }

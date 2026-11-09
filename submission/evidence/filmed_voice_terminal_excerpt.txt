@@ -1,0 +1,14 @@
+CÂU 1/1:  Đi đến phòng UAV.
+Lộ trình mong đợi: A
+Enter để BẮT ĐẦU GHI (q: kết thúc):
+Đang ghi âm, tối đa 12 giây
+ĐANG GHI — Hãy nói ngay. Nói xong nhấn Enter:
+Dừng ghi; đang nhận dạng
+Đang nhận dạng, vui lòng đợi...
+ASR: TRANSCRIPT Đi đến phòng UAV
+ĐÃ NHẬN: Đi đến phòng UAV
+PARSER: ['A']
+Robot đang thực hiện lệnh. Chờ hoàn thành trước câu tiếp theo.
+NAV: WAYPOINT_SUCCEEDED A Nav2 xác nhận waypoint thành công
+NAV: ALL_WAYPOINTS_REACHED  Nhiệm vụ kết thúc
+KẾT QUẢ: PASS — GIỌNG NÓI → ROBOT THÀNH CÔNG

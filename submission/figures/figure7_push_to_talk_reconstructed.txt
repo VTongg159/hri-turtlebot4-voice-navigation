@@ -1,0 +1,37 @@
+HÌNH 7 — TÁI DỰNG TỪ LOG THẬT (không phải ảnh chụp lúc thử)
+Phiên gốc: 09/11/2026. Lần xem này KHÔNG thu âm, KHÔNG gửi navigation goal.
+
+[1] PUSH-TO-TALK / ASR — trích terminal gốc của lượt đạt; lược dòng trống
+CÂU 1/1:  Đi đến phòng UAV.
+Lộ trình mong đợi: A
+Enter để BẮT ĐẦU GHI (q: kết thúc):
+Đang ghi âm, tối đa 12 giây
+ĐANG GHI — Hãy nói ngay. Nói xong nhấn Enter:
+Dừng ghi; đang nhận dạng
+Đang nhận dạng, vui lòng đợi...
+ASR: TRANSCRIPT Đi đến phòng UAV
+ĐÃ NHẬN: Đi đến phòng UAV
+PARSER: ['A']
+Robot đang thực hiện lệnh. Chờ hoàn thành trước câu tiếp theo.
+NAV: WAYPOINT_SUCCEEDED A Nav2 xác nhận waypoint thành công
+NAV: ALL_WAYPOINTS_REACHED  Nhiệm vụ kết thúc
+KẾT QUẢ: PASS — GIỌNG NÓI → ROBOT THÀNH CÔNG
+
+[2] PARSER — dữ liệu JSON của cùng lượt, bổ sung từ receipt đã lưu
+{
+  "type": "single",
+  "waypoints": [
+    "A"
+  ],
+  "starts_from_source": false,
+  "command_id": "00e17b89ae0a431b93682c6d1cbd7c0b",
+  "transcript": "Đi đến phòng UAV"
+}
+
+[3] NAV2 — đối chiếu terminal result trong receipt
+command_id : 00e17b89ae0a431b93682c6d1cbd7c0b
+state      : SUCCEEDED
+event      : ALL_WAYPOINTS_REACHED
+
+Lưu ý: có 2 lượt ghi — lượt đầu NO_SPEECH; lượt sau đạt như hiển thị.
+Nguồn: submission/evidence/filmed_voice_acceptance.json và filmed_voice_attempts.json
