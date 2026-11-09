@@ -1,0 +1,30 @@
+name: Source checks
+on: [push, pull_request]
+
+jobs:
+  static-and-pure-python:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test dependencies
+        run: >-
+          python -m pip install -r requirements-dev.txt
+          'numpy>=1.26,<2' 'opencv-python-headless>=4.10,<4.12'
+          PyYAML matplotlib
+      - name: Lint
+        run: ruff check src/tb4_voice_navigation scripts
+      - name: Formatting
+        run: >-
+          ruff format --check src/tb4_voice_navigation/tb4_voice_navigation
+          src/tb4_voice_navigation/launch src/tb4_voice_navigation/test
+          src/tb4_voice_navigation/scripts src/tb4_voice_navigation/setup.py scripts
+      - name: Map, parser and scene tests without ROS runtime
+        env:
+          PYTHONPATH: src/tb4_voice_navigation
+        # The remaining test uses the real ROS UUID message, covered by local colcon.
+        run: >-
+          pytest -q src/tb4_voice_navigation/test
+          -k 'not actual_ros_uuid_equality_regression'

@@ -1,0 +1,498 @@
+[
+  {
+    "sequence": 1,
+    "state": "IDLE",
+    "event": "READY",
+    "message": "Chờ câu lệnh",
+    "command_id": "",
+    "waypoints": [],
+    "waypoint_index": 0,
+    "current_target": null,
+    "busy": false,
+    "wall_time": 1794214017.8335192
+  },
+  {
+    "sequence": 2,
+    "state": "VALIDATING",
+    "event": "ACCEPTED",
+    "message": "Đã kiểm tra semantic metadata; chờ Nav2 và localization",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214180.492724
+  },
+  {
+    "sequence": 3,
+    "state": "PLANNING",
+    "event": "CHECKING_PATH",
+    "message": "Kiểm tra đường đi bằng Nav2 planner",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214180.5805264
+  },
+  {
+    "sequence": 4,
+    "state": "PLANNING",
+    "event": "PLAN_ACCEPTED",
+    "message": "Nav2 đã nhận goal",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214180.5829527
+  },
+  {
+    "sequence": 5,
+    "state": "PLANNING",
+    "event": "ACTION_TERMINAL",
+    "message": "Đã nhận terminal result thật",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214180.6371658,
+    "action_kind": "plan",
+    "action_status": 4,
+    "error_code": 0
+  },
+  {
+    "sequence": 6,
+    "state": "NAVIGATING",
+    "event": "NAVIGATING",
+    "message": "Đang đi tới khu vực",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214180.6433969
+  },
+  {
+    "sequence": 7,
+    "state": "NAVIGATING",
+    "event": "GOAL_ACCEPTED",
+    "message": "Nav2 đã nhận goal",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214180.6457114
+  },
+  {
+    "sequence": 8,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214180.646843,
+    "distance_remaining": 0.0,
+    "recoveries": 0
+  },
+  {
+    "sequence": 9,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214182.65612,
+    "distance_remaining": 19.695709228515625,
+    "recoveries": 0
+  },
+  {
+    "sequence": 10,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214184.6664224,
+    "distance_remaining": 18.795711517333984,
+    "recoveries": 0
+  },
+  {
+    "sequence": 11,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214186.676345,
+    "distance_remaining": 17.920711517333984,
+    "recoveries": 0
+  },
+  {
+    "sequence": 12,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214188.686165,
+    "distance_remaining": 17.04570960998535,
+    "recoveries": 0
+  },
+  {
+    "sequence": 13,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214190.6963613,
+    "distance_remaining": 16.09571075439453,
+    "recoveries": 0
+  },
+  {
+    "sequence": 14,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214192.7060938,
+    "distance_remaining": 15.070710182189941,
+    "recoveries": 0
+  },
+  {
+    "sequence": 15,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214194.7160819,
+    "distance_remaining": 14.170710563659668,
+    "recoveries": 0
+  },
+  {
+    "sequence": 16,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214196.7162497,
+    "distance_remaining": 13.245710372924805,
+    "recoveries": 0
+  },
+  {
+    "sequence": 17,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214198.7263925,
+    "distance_remaining": 12.295711517333984,
+    "recoveries": 0
+  },
+  {
+    "sequence": 18,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214200.7266233,
+    "distance_remaining": 11.370710372924805,
+    "recoveries": 0
+  },
+  {
+    "sequence": 19,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214202.7361894,
+    "distance_remaining": 10.445711135864258,
+    "recoveries": 0
+  },
+  {
+    "sequence": 20,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214204.7366598,
+    "distance_remaining": 9.445711135864258,
+    "recoveries": 0
+  },
+  {
+    "sequence": 21,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214206.7459586,
+    "distance_remaining": 8.470711708068848,
+    "recoveries": 0
+  },
+  {
+    "sequence": 22,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214208.7561011,
+    "distance_remaining": 7.5207109451293945,
+    "recoveries": 0
+  },
+  {
+    "sequence": 23,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214210.7660406,
+    "distance_remaining": 6.54571008682251,
+    "recoveries": 0
+  },
+  {
+    "sequence": 24,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214212.7762299,
+    "distance_remaining": 5.545710563659668,
+    "recoveries": 0
+  },
+  {
+    "sequence": 25,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214214.776455,
+    "distance_remaining": 4.6457109451293945,
+    "recoveries": 0
+  },
+  {
+    "sequence": 26,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214216.7764902,
+    "distance_remaining": 3.695711612701416,
+    "recoveries": 0
+  },
+  {
+    "sequence": 27,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214218.786065,
+    "distance_remaining": 2.7957096099853516,
+    "recoveries": 0
+  },
+  {
+    "sequence": 28,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214220.7961504,
+    "distance_remaining": 1.8707102537155151,
+    "recoveries": 0
+  },
+  {
+    "sequence": 29,
+    "state": "NAVIGATING",
+    "event": "FEEDBACK",
+    "message": "Phản hồi Nav2",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214222.7963798,
+    "distance_remaining": 0.9957106709480286,
+    "recoveries": 0
+  },
+  {
+    "sequence": 30,
+    "state": "NAVIGATING",
+    "event": "ACTION_TERMINAL",
+    "message": "Đã nhận terminal result thật",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214224.5958838,
+    "action_kind": "nav",
+    "action_status": 4,
+    "error_code": 0
+  },
+  {
+    "sequence": 31,
+    "state": "NAVIGATING",
+    "event": "WAYPOINT_SUCCEEDED",
+    "message": "Nav2 xác nhận waypoint thành công",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 0,
+    "current_target": "F",
+    "busy": true,
+    "wall_time": 1794214224.5969043
+  },
+  {
+    "sequence": 32,
+    "state": "SUCCEEDED",
+    "event": "ALL_WAYPOINTS_REACHED",
+    "message": "Nhiệm vụ kết thúc",
+    "command_id": "2a58d8fde32a44de823f5f2a934fd899",
+    "waypoints": [
+      "F"
+    ],
+    "waypoint_index": 1,
+    "current_target": null,
+    "busy": false,
+    "wall_time": 1794214224.597499
+  }
+]

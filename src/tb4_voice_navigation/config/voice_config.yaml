@@ -1,0 +1,24 @@
+voice_recognition_node:
+  ros__parameters:
+    model: small
+    local_files_only: true
+    cpu_threads: 4
+    audio_device: default
+    max_record_seconds: 12
+    min_record_seconds: 0.4
+    min_rms: 0.008
+    max_clipping_fraction: 0.08
+    min_avg_logprob: -0.8
+    max_no_speech_probability: 0.5
+voice_navigation_node:
+  ros__parameters:
+    navigate_action: /navigate_to_pose
+    planner_action: /compute_path_to_pose
+    base_frame: base_link
+    server_timeout: 10.0
+    goal_timeout: 180.0
+    planning_timeout: 15.0
+    cancel_timeout: 10.0
+    tf_max_age: 2.0
+    source_tolerance: 0.3
+    localization_covariance_max: 0.5

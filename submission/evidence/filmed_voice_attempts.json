@@ -1,0 +1,73 @@
+[
+  {
+    "trial": 1,
+    "expected_sentence": "Đi đến phòng UAV.",
+    "expected_waypoints": [
+      "A"
+    ],
+    "started_wall_time": 1794216712.4075346,
+    "input_source": "real microphone",
+    "passed": false,
+    "asr": {
+      "event": "NO_SPEECH",
+      "message": "Không có transcript đủ tin cậy; không gửi lệnh",
+      "ready": true,
+      "busy": false,
+      "wall_time": 1794216719.3190198,
+      "recording_id": 7,
+      "duration": 4.8621875,
+      "rms": 0.08080334961414337,
+      "clipping_fraction": 0.0,
+      "audio_file": "deliverables/pairslab_demo_20261109/voice/audio/20261109_163157_07ba2e48.wav",
+      "vad_speech_seconds": 2.368
+    },
+    "error": "Không có transcript đủ tin cậy; không gửi lệnh"
+  },
+  {
+    "trial": 1,
+    "expected_sentence": "Đi đến phòng UAV.",
+    "expected_waypoints": [
+      "A"
+    ],
+    "started_wall_time": 1794216724.3329282,
+    "input_source": "real microphone",
+    "passed": true,
+    "asr": {
+      "event": "TRANSCRIPT",
+      "message": "Đi đến phòng UAV",
+      "ready": true,
+      "busy": false,
+      "wall_time": 1794216729.7190864,
+      "recording_id": 8,
+      "duration": 3.4541875,
+      "rms": 0.09688548743724823,
+      "clipping_fraction": 0.0,
+      "audio_file": "deliverables/pairslab_demo_20261109/voice/audio/20261109_163207_23beaf8d.wav",
+      "vad_speech_seconds": 2.528
+    },
+    "actual_transcript": "Đi đến phòng UAV",
+    "parsed": {
+      "type": "single",
+      "waypoints": [
+        "A"
+      ],
+      "starts_from_source": false,
+      "command_id": "00e17b89ae0a431b93682c6d1cbd7c0b",
+      "transcript": "Đi đến phòng UAV"
+    },
+    "navigation_terminal": {
+      "sequence": 197,
+      "state": "SUCCEEDED",
+      "event": "ALL_WAYPOINTS_REACHED",
+      "message": "Nhiệm vụ kết thúc",
+      "command_id": "00e17b89ae0a431b93682c6d1cbd7c0b",
+      "waypoints": [
+        "A"
+      ],
+      "waypoint_index": 1,
+      "current_target": null,
+      "busy": false,
+      "wall_time": 1794216791.2256808
+    }
+  }
+]

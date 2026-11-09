@@ -1,0 +1,6 @@
+# Install in a venv created with --system-site-packages, never system Python.
+numpy>=1.26,<2
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+reportlab==5.1.0
+# Microphone uses arecord from the existing alsa-utils installation.

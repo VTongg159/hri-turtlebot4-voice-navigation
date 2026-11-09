@@ -1,0 +1,7 @@
+source: collision geometry from generate_training_world.py
+method: conservative cell/primitive intersection at robot collision height 0.03–0.38m
+not_slam: true
+world: semantic_campus.sdf
+resolution: 0.05
+collision_obstacles: 113
+visual_objects: 196

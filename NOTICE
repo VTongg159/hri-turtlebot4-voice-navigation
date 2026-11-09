@@ -1,0 +1,14 @@
+PAIRS Lab / Bài thực hành 07
+
+The original application source is distributed under Apache-2.0 (LICENSE).
+Third-party robot meshes, descriptions and textures retain their original
+licenses. See docs/PAIRSLAB_ASSETS.md and the LICENSE/COPYRIGHT files in
+src/tb4_voice_navigation/models/. The root software license does not
+relicense those assets.
+
+PAIRS Lab and VNU logos were supplied for identification of this educational
+scene. No ownership or software-license rights in the logos are claimed.
+
+The public edited demonstration contains the speaker's real utterance from
+the filmed trial. Raw microphone WAV files, model caches, build environments
+and desktop/process dumps are excluded from the public source distribution.

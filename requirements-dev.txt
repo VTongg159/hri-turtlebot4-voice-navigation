@@ -1,0 +1,3 @@
+# ROS dependencies come from the Jazzy environment (venv --system-site-packages).
+pytest>=8,<9
+ruff==0.14.4
