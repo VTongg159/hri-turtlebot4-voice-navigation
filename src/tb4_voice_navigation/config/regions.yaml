@@ -1,0 +1,31 @@
+map_frame: map
+map_yaml: ../maps/campus.yaml
+min_clearance: 0.35
+reachable_from_map: [-5.5, 0.0]
+provenance: Manual polygons and goals on collision-derived campus map. Names are teaching labels.
+regions:
+  - id: A
+    name: Phòng học
+    aliases: [khu vực a, phòng a, lớp học]
+    polygon_pixels: [[13, 12], [146, 12], [146, 83], [13, 83]]
+    goal: {x: -3.5, y: 2.5, yaw: 1.57079632679}
+  - id: B
+    name: Phòng thí nghiệm
+    aliases: [khu vực b, phòng b, phòng lab]
+    polygon_pixels: [[153, 12], [286, 12], [286, 83], [153, 83]]
+    goal: {x: 3.5, y: 2.1, yaw: 1.57079632679}
+  - id: C
+    name: Hành lang
+    aliases: [khu vực c, phòng c, hành lang c, sảnh]
+    polygon_pixels: [[13, 89], [286, 89], [286, 130], [13, 130]]
+    goal: {x: 0.0, y: 0.0, yaw: 0.0}
+  - id: D
+    name: Phòng họp
+    aliases: [khu vực d, phòng d]
+    polygon_pixels: [[13, 136], [146, 136], [146, 207], [13, 207]]
+    goal: {x: -3.5, y: -1.95, yaw: -1.57079632679}
+  - id: E
+    name: Khu nghỉ
+    aliases: [khu vực e, phòng e, phòng nghỉ, khu tiếp khách]
+    polygon_pixels: [[153, 136], [286, 136], [286, 207], [153, 207]]
+    goal: {x: 3.4, y: -2.2, yaw: -1.57079632679}

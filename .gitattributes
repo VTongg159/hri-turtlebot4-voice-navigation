@@ -1,0 +1,10 @@
+# Binary deliverables must never be normalized as text.
+*.pdf binary
+*.png binary
+*.pgm binary
+*.npy binary
+*.mp4 binary
+*.stl binary
+*.STL binary
+# Keep vendor bytes/hashes, including original CRLF in URDF, unchanged.
+src/tb4_voice_navigation/models/** -text -diff

@@ -1,0 +1,48 @@
+A:
+  valid: true
+  goal:
+    x: -9.0
+    y: 3.65
+    yaw: 1.5707963267948966
+  clearance_m: 1.014644742012024
+  reason: ''
+B:
+  valid: true
+  goal:
+    x: 0.0
+    y: 3.65
+    yaw: 1.5707963267948966
+  clearance_m: 1.8368092775344849
+  reason: ''
+C:
+  valid: true
+  goal:
+    x: 0.0
+    y: 0.0
+    yaw: 0.0
+  clearance_m: 1.8646446466445923
+  reason: ''
+D:
+  valid: true
+  goal:
+    x: 9.0
+    y: 3.65
+    yaw: 1.5707963267948966
+  clearance_m: 1.8368092775344849
+  reason: ''
+E:
+  valid: true
+  goal:
+    x: -7.0
+    y: -3.65
+    yaw: -1.5707963267948966
+  clearance_m: 1.7003000974655151
+  reason: ''
+F:
+  valid: true
+  goal:
+    x: 7.0
+    y: -3.65
+    yaw: -1.5707963267948966
+  clearance_m: 1.8784105777740479
+  reason: ''

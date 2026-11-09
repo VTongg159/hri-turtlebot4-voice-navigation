@@ -1,0 +1,169 @@
+{
+  "scene": "PAIRS Robotics Research Lab",
+  "map_source": "collision-derived prior; not SLAM",
+  "segmentation": "supervised semantic polygons; watershed suggestions not quantitatively evaluated",
+  "voice_in_video": "one real microphone command -> ASR -> parser A -> real simulated Nav2 success",
+  "voice_attempts_in_filmed_session": "2 recordings: NO_SPEECH then success; final clip uses success",
+  "tour": "labelled keyboard transcripts, 2x playback, resumed after localization loss",
+  "video_duration_s": 265.754362,
+  "raw_files": "kept locally; raw WAV/video not included in public export",
+  "latex": "../docs/bao_cao_bai7.tex; placeholders only; not compiled",
+  "files": {
+    "CHAPTERS.md": {
+      "bytes": 620,
+      "sha256": "1818372874e17d0656007945f8fc48ca50e4417ce4e8660a721a648e439739eb"
+    },
+    "PAIRS_Lab_Demo_1080p.mp4": {
+      "bytes": 6270470,
+      "sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd"
+    },
+    "config/pairs_regions.yaml": {
+      "bytes": 2610,
+      "sha256": "178a8c92116b0852a4d291a9543df7dae71a2a6980ab73d80b9891ea7a7c116e"
+    },
+    "evidence/coverage.json": {
+      "bytes": 9442,
+      "sha256": "66e7675ba88244c79918b7fe943c30cf787783006df001968cdab8ac58bd4d34"
+    },
+    "evidence/filmed_voice_acceptance.json": {
+      "bytes": 2023,
+      "sha256": "b9cfb8f7feeda0a8ecaf12c8c45d677ad81d9b4afa9ab77bf14b2597d24f7ca3"
+    },
+    "evidence/filmed_voice_attempts.json": {
+      "bytes": 2074,
+      "sha256": "e4321e9d5cf8453113b9af7a9d337889e75a1d41f8bdfeb7702d32f4aa7caa39"
+    },
+    "evidence/goals_validation.json": {
+      "bytes": 1108,
+      "sha256": "2ad9526e9c6dc853ad5a2a7ec527be053f15ac77fd1191f5bbd9ec41aeda8c39"
+    },
+    "evidence/historical_campus/live_failures_results.json": {
+      "bytes": 5551,
+      "sha256": "da3411fb93dbd9a5007e2f0dd9fa7c80c254e9a0db5a6b2a17404754349f9dbb"
+    },
+    "evidence/historical_campus/live_pipeline_results.json": {
+      "bytes": 3419,
+      "sha256": "4b4d77a0a393efebe2690bb00b6554197b0b784219b926eb923c8261d3349259"
+    },
+    "evidence/historical_campus/unreachable_result.json": {
+      "bytes": 1460,
+      "sha256": "4ef59365d5e6191074888149e7968efffea18cad0254dd88d1ad85a49b57379c"
+    },
+    "evidence/navigation.json": {
+      "bytes": 1923,
+      "sha256": "25e9c6c123d33ffb0d03a66992cd6ac8ed770129efe2be8acf33b580a8d6e957"
+    },
+    "evidence/navigation_results.json": {
+      "bytes": 6549,
+      "sha256": "7a957e2b3c05a97fb3330a2702db90638059ea4742d8fae224bc7141310223a7"
+    },
+    "evidence/navigation_resume_results.json": {
+      "bytes": 7856,
+      "sha256": "257ab0478e46a53ed247d46c2361983f3b7e48f07fc1f0cbf818abcc649e58f9"
+    },
+    "evidence/pipeline.json": {
+      "bytes": 706,
+      "sha256": "fc84d12334f61658cce47d85369537f9854d55277c83c15031c1da8d39f80b2b"
+    },
+    "evidence/pipeline_events.json": {
+      "bytes": 11739,
+      "sha256": "c7c537cdc1dfb0e56cf10b507f76b9284a50b470d616c24c438afdb19744b24e"
+    },
+    "evidence/render_manifest.json": {
+      "bytes": 13550,
+      "sha256": "14e4806923f6a6c12f090099a5c865470b9009ef7cc8120cce210ca72a728ee9"
+    },
+    "evidence/scan_alignment.json": {
+      "bytes": 445,
+      "sha256": "6179360690d70cd79796eae1a7ada48211c3d64e58bec45afd0429ed2a021595"
+    },
+    "evidence/source_validation.json": {
+      "bytes": 522,
+      "sha256": "fb2dd4d7544c87b3534fe27054dd9dc5babc5912e47749ff66538f7331d9ef0d"
+    },
+    "evidence/video_acceptance.json": {
+      "bytes": 9649,
+      "sha256": "0ef0dac6c4088f7ec1b3adc71d34a79316298ce71edc8878dc44f04262c9232a"
+    },
+    "evidence/voice_acceptance.json": {
+      "bytes": 4029,
+      "sha256": "ebad2484221dd7b2dea9bacd0d80bb02569b822d79212a27feb245a6a0f62bfc"
+    },
+    "figures/arrival_B.png": {
+      "bytes": 210147,
+      "sha256": "d8eac783ccf03411e5d5b67376bf5260e06b4c59c18d451af6dd96b370fde56c"
+    },
+    "figures/arrival_C.png": {
+      "bytes": 99859,
+      "sha256": "c1cf2eccd0d1724b2ef9dcf851d692b1667d4ffcdfed7707975b0a80ab4b8678"
+    },
+    "figures/arrival_D.png": {
+      "bytes": 122049,
+      "sha256": "1b77ee658b36225c0bec1f9d57c0c93a8421e298cd6e697a2176a55ace6f7431"
+    },
+    "figures/arrival_E.png": {
+      "bytes": 130752,
+      "sha256": "813f81aa292e7559ffc104f2a4c1c1e0f6820381ef5f7aa3b33b6f63d5c3ba42"
+    },
+    "figures/arrival_F.png": {
+      "bytes": 163661,
+      "sha256": "58edd6b4e8303a818cda1a7a26e75231ef9cf79fafa08d8f26bfeb6d60b5c797"
+    },
+    "figures/environment_branding.png": {
+      "bytes": 99859,
+      "sha256": "c1cf2eccd0d1724b2ef9dcf851d692b1667d4ffcdfed7707975b0a80ab4b8678"
+    },
+    "figures/environment_go2.png": {
+      "bytes": 126344,
+      "sha256": "40c8adc3900ec5c4d66124191e5efc5f56306a27984f19aef7e6d8788b3562f9"
+    },
+    "figures/environment_hri.png": {
+      "bytes": 118298,
+      "sha256": "04cb0deceea48965d5a176db8fe79dcd30742ec77e523299193e210055b9f10c"
+    },
+    "figures/environment_manipulation.png": {
+      "bytes": 208108,
+      "sha256": "87c4c7e8cf76f8acc1d82e3772760a2e61201210b30f23fa708e96cb3179e2ca"
+    },
+    "figures/environment_overview.png": {
+      "bytes": 138927,
+      "sha256": "bb17a22a212066938106a2193b170b456f7eff3846769f848423e85da9af2838"
+    },
+    "figures/environment_turtlebot.png": {
+      "bytes": 160743,
+      "sha256": "a78b7124e186f6364c4eed7cffc158ca19bfc93fa24bdb45106f9b06154c0636"
+    },
+    "figures/environment_uav.png": {
+      "bytes": 225337,
+      "sha256": "6ea2410c8d418946bbaa4c8d5b37c7d6a8ad08e121a2c8b3d44e9eb7d4f6ecb1"
+    },
+    "figures/tour_complete.png": {
+      "bytes": 138927,
+      "sha256": "bb17a22a212066938106a2193b170b456f7eff3846769f848423e85da9af2838"
+    },
+    "figures/voice_UAV_arrival.png": {
+      "bytes": 226717,
+      "sha256": "17d27bcdaab0be4c4605e09dcc05a5fa63b9b2bc288ac0dcca9fe9af43e1c2d9"
+    },
+    "maps/pairs_lab.pgm": {
+      "bytes": 243615,
+      "sha256": "02e8972f0ca9c8893ba2df281b86418fbb336e994c7f44583d0617f75ef8e4fa"
+    },
+    "maps/pairs_lab.yaml": {
+      "bytes": 133,
+      "sha256": "2eca4f0c8611f9547831ef00c4bcd28940f7c48e451c74f658da8009ff277101"
+    },
+    "maps/pairs_lab_original.png": {
+      "bytes": 7625,
+      "sha256": "265ddbc81de1d5e0c3cca27935b9f532745f200251217a98e32160e61d3cba1d"
+    },
+    "maps/pairs_provenance.yaml": {
+      "bytes": 363,
+      "sha256": "297908ef04cb815d3ebad64df548dce65896c2f0f1b5ad44ba0103c70f309e08"
+    },
+    "maps/pairslab_segmentation.png": {
+      "bytes": 166621,
+      "sha256": "0662eb0ac449475ff3799661e5b379b178be3695d190c639640096e1c9936e2d"
+    }
+  }
+}

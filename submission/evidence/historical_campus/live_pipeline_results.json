@@ -1,0 +1,148 @@
+[
+  {
+    "test": "T09_unknown_no_goal",
+    "passed": true,
+    "detail": {
+      "sequence": 2,
+      "state": "IDLE",
+      "event": "REJECTED",
+      "message": "{'code': 'UNKNOWN_REGION', 'message': 'Không tìm thấy khu vực: khu vuc z'}",
+      "command_id": "",
+      "waypoints": [],
+      "waypoint_index": 0,
+      "current_target": null,
+      "busy": false,
+      "wall_time": 1793610220.0380046
+    }
+  },
+  {
+    "test": "T14_busy_reject",
+    "passed": true,
+    "detail": {
+      "sequence": 10,
+      "state": "NAVIGATING",
+      "event": "BUSY",
+      "message": "Robot đang bận; từ chối lệnh mới",
+      "command_id": "2ade472fcba74a01a4f0ab623941ff4e",
+      "waypoints": [
+        "A",
+        "C",
+        "B"
+      ],
+      "waypoint_index": 0,
+      "current_target": "A",
+      "busy": true,
+      "wall_time": 1793610220.1258268,
+      "rejected_command_id": "eaf91d277f6b41b79a57a3fdd8cd8aae"
+    }
+  },
+  {
+    "test": "T13_real_action_cancel",
+    "passed": true,
+    "detail": {
+      "sequence": 13,
+      "state": "CANCELED",
+      "event": "USER_CANCEL",
+      "message": "Nhiệm vụ kết thúc",
+      "command_id": "2ade472fcba74a01a4f0ab623941ff4e",
+      "waypoints": [
+        "A",
+        "C",
+        "B"
+      ],
+      "waypoint_index": 0,
+      "current_target": null,
+      "busy": false,
+      "wall_time": 1793610220.13431
+    }
+  },
+  {
+    "test": "T08_A_C_B",
+    "passed": true,
+    "detail": {
+      "visited": [
+        "A",
+        "C",
+        "B"
+      ],
+      "terminal": {
+        "sequence": 74,
+        "state": "SUCCEEDED",
+        "event": "ALL_WAYPOINTS_REACHED",
+        "message": "Nhiệm vụ kết thúc",
+        "command_id": "3f1dc06a97c44401aed3ef563a565d9c",
+        "waypoints": [
+          "A",
+          "C",
+          "B"
+        ],
+        "waypoint_index": 3,
+        "current_target": null,
+        "busy": false,
+        "wall_time": 1793610297.0820813
+      }
+    }
+  },
+  {
+    "test": "T07_current_to_A_to_B",
+    "passed": true,
+    "detail": {
+      "visited": [
+        "A",
+        "B"
+      ],
+      "terminal": {
+        "sequence": 126,
+        "state": "SUCCEEDED",
+        "event": "ALL_WAYPOINTS_REACHED",
+        "message": "Nhiệm vụ kết thúc",
+        "command_id": "afd404ba8ba24f718dd75c3a2f6819d8",
+        "waypoints": [
+          "A",
+          "B"
+        ],
+        "waypoint_index": 2,
+        "current_target": null,
+        "busy": false,
+        "wall_time": 1793610370.4597857
+      }
+    }
+  },
+  {
+    "test": "source_skip_near",
+    "passed": true,
+    "detail": {
+      "sequence": 149,
+      "state": "SUCCEEDED",
+      "event": "ALL_WAYPOINTS_REACHED",
+      "message": "Nhiệm vụ kết thúc",
+      "command_id": "bcd4adf170894491846181e39e4c5c3b",
+      "waypoints": [
+        "B",
+        "C"
+      ],
+      "waypoint_index": 2,
+      "current_target": null,
+      "busy": false,
+      "wall_time": 1793610395.874524
+    }
+  },
+  {
+    "test": "T06_alias_keyboard_navigation",
+    "passed": true,
+    "detail": {
+      "sequence": 165,
+      "state": "SUCCEEDED",
+      "event": "ALL_WAYPOINTS_REACHED",
+      "message": "Nhiệm vụ kết thúc",
+      "command_id": "b7c5f09b01c14a9e9f42759e63164ac0",
+      "waypoints": [
+        "B"
+      ],
+      "waypoint_index": 1,
+      "current_target": null,
+      "busy": false,
+      "wall_time": 1793610410.3281748
+    }
+  }
+]

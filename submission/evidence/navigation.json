@@ -1,0 +1,98 @@
+[
+  {
+    "region": "A",
+    "result": "SUCCEEDED",
+    "elapsed_wall_s": 12.06,
+    "goal": {
+      "x": -9.0,
+      "y": 3.65,
+      "yaw": 1.5707963267948966
+    },
+    "last_feedback_xy": [
+      -9.039927953561248,
+      3.430695897344384
+    ],
+    "distance_to_goal_m": 0.22290924367817058,
+    "recoveries": 0
+  },
+  {
+    "region": "B",
+    "result": "SUCCEEDED",
+    "elapsed_wall_s": 41.0,
+    "goal": {
+      "x": 0.0,
+      "y": 3.65,
+      "yaw": 1.5707963267948966
+    },
+    "last_feedback_xy": [
+      -0.07480630205849614,
+      3.4020424051298375
+    ],
+    "distance_to_goal_m": 0.25899604568692275,
+    "recoveries": 0
+  },
+  {
+    "region": "D",
+    "result": "SUCCEEDED",
+    "elapsed_wall_s": 43.43,
+    "goal": {
+      "x": 9.0,
+      "y": 3.65,
+      "yaw": 1.5707963267948966
+    },
+    "last_feedback_xy": [
+      8.892845136895174,
+      3.4233015865625958
+    ],
+    "distance_to_goal_m": 0.2507475530130858,
+    "recoveries": 0
+  },
+  {
+    "region": "C",
+    "result": "SUCCEEDED",
+    "elapsed_wall_s": 43.35,
+    "goal": {
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0
+    },
+    "last_feedback_xy": [
+      -0.013133333140880055,
+      -0.02139457306425574
+    ],
+    "distance_to_goal_m": 0.025104027485467657,
+    "recoveries": 0
+  },
+  {
+    "region": "E",
+    "result": "SUCCEEDED",
+    "elapsed_wall_s": 39.06,
+    "goal": {
+      "x": -7.0,
+      "y": -3.65,
+      "yaw": -1.5707963267948966
+    },
+    "last_feedback_xy": [
+      -6.943935488084742,
+      -3.4089173572691616
+    ],
+    "distance_to_goal_m": 0.24751579772285473,
+    "recoveries": 0
+  },
+  {
+    "region": "F",
+    "result": "SUCCEEDED",
+    "elapsed_wall_s": 45.05,
+    "goal": {
+      "x": 7.0,
+      "y": -3.65,
+      "yaw": -1.5707963267948966
+    },
+    "last_feedback_xy": [
+      6.981588337061002,
+      -3.4093335860513787
+    ],
+    "distance_to_goal_m": 0.24136965868780685,
+    "recoveries": 0
+  }
+]
