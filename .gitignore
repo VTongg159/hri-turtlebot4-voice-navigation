@@ -41,3 +41,6 @@ evidence/publication/*
 
 # The exported demo is intentionally public; raw audio/video stays ignored.
 !submission/PAIRS_Lab_Demo_1080p.mp4
+
+# Machine-process receipt is local history, not a submission artifact.
+evidence/pairslab_redesign/shutdown.json
