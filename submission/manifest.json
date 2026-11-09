@@ -192,6 +192,22 @@
     "evidence/figure7_provenance.json": {
       "bytes": 1213,
       "sha256": "e73514570c9d496ad234e4082bfdd1f5f2b465eba0c7b8650e978c94627b5c80"
+    },
+    "figures/figure7_voice_command_result.png": {
+      "bytes": 110059,
+      "sha256": "e367c8c5483c2cec25681718725090f0aaa4bafd2848823c2339f8f481875638"
+    },
+    "figures/figure7_voice_command_result.txt": {
+      "bytes": 1110,
+      "sha256": "f999af14a31f81af43efd645009b3364fae3186ba003128969c2603bedfdf532"
+    },
+    "evidence/figure7_command_trace.json": {
+      "bytes": 3169,
+      "sha256": "4cb5685da9e3835851786bc32286f0d7b372c043eb27de53112e381f81fb90b7"
+    },
+    "evidence/figure7_result_provenance.json": {
+      "bytes": 965,
+      "sha256": "95f5fde154d1a915b92d1f085179171e406e0625a614cd9f2d93f295599ca396"
     }
   }
 }

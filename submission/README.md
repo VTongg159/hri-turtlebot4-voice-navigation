@@ -8,7 +8,7 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 | Occupancy gốc | [PGM](maps/pairs_lab.pgm), [YAML](maps/pairs_lab.yaml), [ảnh PNG](maps/pairs_lab_original.png) |
 | Hình occupancy có chú giải và START (Hình 4) | [pairs_lab_occupancy_annotated.png](maps/pairs_lab_occupancy_annotated.png) |
 | Hình 6: quy ước pixel và map | [PNG](figures/pairs_lab_pixel_map_coordinates.png), [SVG](figures/pairs_lab_pixel_map_coordinates.svg) |
-| Hình 7: terminal tái dựng từ log thật | [Ảnh PNG](figures/figure7_push_to_talk_reconstructed.png), [text](figures/figure7_push_to_talk_reconstructed.txt), [provenance](evidence/figure7_provenance.json) |
+| Hình 7: kết quả thu âm → ASR → parser → Nav2 | [Ảnh PNG mới](figures/figure7_voice_command_result.png), [text](figures/figure7_voice_command_result.txt), [nguồn dữ liệu](evidence/figure7_result_provenance.json) |
 | Ảnh phân vùng A–F | [pairslab_segmentation.png](maps/pairslab_segmentation.png) |
 | Polygon, tên, aliases và goal | [pairs_regions.yaml](config/pairs_regions.yaml) |
 | Kiểm tra sáu goal | [goals_validation.json](evidence/goals_validation.json) |
@@ -40,4 +40,4 @@ Video hiện chưa quay riêng đủ mọi dạng trong sáu demo của đề (g
 
 Giữ cấu trúc `config/` và `maps/` khi tải metadata để đường dẫn `../maps/pairs_lab.yaml` tiếp tục hợp lệ. Source package chứa bản map và metadata tương ứng để chạy ROS.
 
-Hình7 là ảnh chụp cửa sổ terminal hiện tại khi xem lại log cũ, không phải screenshot lúc thử ASR/Nav2. Nhãn tái dựng nằm ngay trong ảnh; dữ liệu parser/command_id được bổ sung từ JSON cùng lượt. Chạy `python scripts/replay_voice_evidence.py` để xem lại read-only; không gọi ROS, microphone hoặc Nav2.
+Hình7 trình bày kết quả từ dữ liệu lượt thử ngày09/11/2026. Đọc lại bằng `python scripts/show_voice_result.py`; script không thu âm hoặc gọi ROS/Nav2. Ảnh có đủ audio/transcript, semantic goal, command_id và chuỗi action thật. Bản hiển thị trước dài hơn vẫn giữ để truy vết; ảnh đề xuất cho báo cáo là figure7_voice_command_result.png.
