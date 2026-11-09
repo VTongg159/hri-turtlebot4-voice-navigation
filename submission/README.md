@@ -7,6 +7,7 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 | LaTeX hoàn chỉnh, chưa biên dịch, hình là placeholder | [bao_cao_bai7.tex](../docs/bao_cao_bai7.tex) |
 | Occupancy gốc | [PGM](maps/pairs_lab.pgm), [YAML](maps/pairs_lab.yaml), [ảnh PNG](maps/pairs_lab_original.png) |
 | Hình occupancy có chú giải và START (Hình 4) | [pairs_lab_occupancy_annotated.png](maps/pairs_lab_occupancy_annotated.png) |
+| Hình 6: quy ước pixel và map | [PNG](figures/pairs_lab_pixel_map_coordinates.png), [SVG](figures/pairs_lab_pixel_map_coordinates.svg) |
 | Ảnh phân vùng A–F | [pairslab_segmentation.png](maps/pairslab_segmentation.png) |
 | Polygon, tên, aliases và goal | [pairs_regions.yaml](config/pairs_regions.yaml) |
 | Kiểm tra sáu goal | [goals_validation.json](evidence/goals_validation.json) |

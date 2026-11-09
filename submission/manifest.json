@@ -168,6 +168,14 @@
     "maps/pairs_lab_occupancy_annotated.png": {
       "bytes": 157423,
       "sha256": "1f900360a767062e36ee862667c255fd015af18125106b27287e50bf392787e9"
+    },
+    "figures/pairs_lab_pixel_map_coordinates.png": {
+      "bytes": 290210,
+      "sha256": "4dcf70d49122f47c01cb50eccd55f65464a01bba6ae4f7526dee46bcf0ebfcde"
+    },
+    "figures/pairs_lab_pixel_map_coordinates.svg": {
+      "bytes": 119407,
+      "sha256": "6bfcba3cb00392fd03e01ee090aa2311f8b7e617576ee90d9e0d93a350d936be"
     }
   }
 }

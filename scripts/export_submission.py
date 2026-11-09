@@ -85,6 +85,9 @@ def main():
     from render_occupancy_figure import main as render_occupancy
 
     render_occupancy()
+    from render_coordinate_figure import main as render_coordinates
+
+    render_coordinates()
     files = {
         str(path.relative_to(DEST)): {
             "bytes": path.stat().st_size,
