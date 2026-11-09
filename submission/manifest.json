@@ -164,6 +164,10 @@
     "maps/pairslab_segmentation.png": {
       "bytes": 166621,
       "sha256": "0662eb0ac449475ff3799661e5b379b178be3695d190c639640096e1c9936e2d"
+    },
+    "maps/pairs_lab_occupancy_annotated.png": {
+      "bytes": 157423,
+      "sha256": "1f900360a767062e36ee862667c255fd015af18125106b27287e50bf392787e9"
     }
   }
 }

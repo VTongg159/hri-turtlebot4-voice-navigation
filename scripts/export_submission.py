@@ -82,6 +82,9 @@ def main():
     copy(FILM / "CHAPTERS.md", DEST / "CHAPTERS.md")
     for path in sorted((FILM / "stills").glob("*.png")):
         copy(path, DEST / "figures" / path.name)
+    from render_occupancy_figure import main as render_occupancy
+
+    render_occupancy()
     files = {
         str(path.relative_to(DEST)): {
             "bytes": path.stat().st_size,
