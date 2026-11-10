@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "input_source": "real microphone",
+  "start_region": "F",
+  "start_tf": {
+    "wall_time": 1794322617.958177,
+    "x": 7.080065681663248,
+    "y": -3.4615223003350515
+  },
+  "asr": {
+    "event": "TRANSCRIPT",
+    "message": "Đi từ khu vực A đến khu vực B",
+    "ready": true,
+    "busy": false,
+    "wall_time": 1794322626.1017585,
+    "recording_id": 2,
+    "duration": 4.9901875,
+    "rms": 0.03097699023783207,
+    "clipping_fraction": 0.0,
+    "audio_file": "evidence/voice_demo/source_destination_live/audio/20261110_215704_5f717428.wav",
+    "audio_highpass_hz": 80.0,
+    "asr_rms": 0.01501396857202053,
+    "segments": [
+      {
+        "text": "Đi từ khu vực A đến khu vực B",
+        "avg_logprob": -0.1983464745914235,
+        "no_speech_probability": 0.5693594813346863,
+        "accepted": true
+      }
+    ],
+    "vad_speech_seconds": 4.064
+  },
+  "parsed": {
+    "type": "source_destination",
+    "waypoints": [
+      "A",
+      "B"
+    ],
+    "starts_from_source": true,
+    "command_id": "1af3f6bf42ac4fe294a391b0a2dfccf9",
+    "transcript": "Đi từ khu vực A đến khu vực B"
+  },
+  "terminal": {
+    "sequence": 70,
+    "state": "SUCCEEDED",
+    "event": "ALL_WAYPOINTS_REACHED",
+    "message": "Nhiệm vụ kết thúc",
+    "command_id": "1af3f6bf42ac4fe294a391b0a2dfccf9",
+    "waypoints": [
+      "A",
+      "B"
+    ],
+    "waypoint_index": 2,
+    "current_target": null,
+    "busy": false,
+    "wall_time": 1794322725.1025643
+  },
+  "segments": [
+    {
+      "goal": "A",
+      "goal_accepted_wall_time": 1794322626.1963487,
+      "terminal_wall_time": 1794322683.2455122,
+      "elapsed_s": 57.049163579940796
+    },
+    {
+      "goal": "B",
+      "goal_accepted_wall_time": 1794322683.3001025,
+      "terminal_wall_time": 1794322725.1007535,
+      "elapsed_s": 41.80065107345581
+    }
+  ],
+  "capture_started_wall_time": 1794322619.0872629,
+  "audio_sha256": "8b3f4f2cc75dfe554e2025ecaa2980f6e37f6990840e23fa0f5b562385e01199"
+}

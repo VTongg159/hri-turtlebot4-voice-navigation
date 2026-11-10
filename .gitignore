@@ -12,7 +12,9 @@ __pycache__/
 # Reports, recordings, and experiment output stay local
 /docs/
 /submission/
-/evidence/
+/evidence/*
+!/evidence/README.md
+!/evidence/pairs_lab/
 /deliverables/
 *.pdf
 *.tex

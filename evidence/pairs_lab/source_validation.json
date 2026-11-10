@@ -1,0 +1,19 @@
+{
+  "build": "Starting >>> tb4_voice_navigation\nFinished <<< tb4_voice_navigation [2.31s]\n\nSummary: 1 package finished [2.53s]",
+  "unit_tests": "Summary: 87 tests, 0 errors, 0 failures, 0 skipped",
+  "lint": "All checks passed!",
+  "format": "44 files already formatted",
+  "latex": "Static environment/source check PASS; figure placeholders; NOT compiled as requested",
+  "date": "2026-11-09",
+  "changes": "Python formatting, unused imports removed, publication/export documentation; no navigation policy changes",
+  "latest_validation": {
+    "date": "2026-11-10",
+    "unit_tests": "90 passed (including real ROS UUID regression)",
+    "build": "PASS: python -m colcon build --symlink-install --packages-select tb4_voice_navigation",
+    "asr_changes": "80Hz high-pass before VAD/ASR; native Whisper joint silence/confidence policy; no threshold lowering",
+    "latex": "Not compiled; source and placeholders only",
+    "ci_tests": "89 passed, 1 ROS-only test deselected",
+    "lint": "PASS",
+    "format": "58 files formatted"
+  }
+}

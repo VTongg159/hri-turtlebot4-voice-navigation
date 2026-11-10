@@ -82,6 +82,21 @@ Segmentation uses supervised polygons intersected with free cells. The map is
 derived from world collision geometry. Goals must be in free, reachable cells
 with sufficient clearance; Nav2 performs runtime path checks.
 
+Paths used in the assignment report map to these repository files:
+
+| Report path | Repository path |
+| --- | --- |
+| `maps/pairs_lab.pgm` | [src/tb4_voice_navigation/maps/pairs_lab.pgm](src/tb4_voice_navigation/maps/pairs_lab.pgm) |
+| `maps/pairs_lab.yaml` | [src/tb4_voice_navigation/maps/pairs_lab.yaml](src/tb4_voice_navigation/maps/pairs_lab.yaml) |
+| `config/pairs_regions.yaml` | [src/tb4_voice_navigation/config/pairs_regions.yaml](src/tb4_voice_navigation/config/pairs_regions.yaml) |
+| `maps/pairslab_segmentation.png` | [maps/pairslab_segmentation.png](maps/pairslab_segmentation.png) |
+| `maps/pairs_lab_original.png` | [maps/pairs_lab_original.png](maps/pairs_lab_original.png) |
+| `evidence/` | [evidence/pairs_lab/](evidence/pairs_lab/) — selected results and event logs |
+
+The original PNG has the same pixels as the PGM. The segmented PNG shows the
+configured regions A–F. See the [evidence index](evidence/README.md) for trial
+details. Reports and recordings are kept separately from this repository.
+
 ```bash
 # Edit region polygons and goals
 ros2 run tb4_voice_navigation map_segmentation \

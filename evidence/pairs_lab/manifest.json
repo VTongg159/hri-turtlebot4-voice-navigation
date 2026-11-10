@@ -1,0 +1,110 @@
+{
+  "maps/pairslab_segmentation.png": {
+    "bytes": 166621,
+    "sha256": "0662eb0ac449475ff3799661e5b379b178be3695d190c639640096e1c9936e2d"
+  },
+  "maps/pairs_lab_original.png": {
+    "bytes": 7625,
+    "sha256": "265ddbc81de1d5e0c3cca27935b9f532745f200251217a98e32160e61d3cba1d"
+  },
+  "evidence/pairs_lab/navigation.json": {
+    "bytes": 1923,
+    "sha256": "25e9c6c123d33ffb0d03a66992cd6ac8ed770129efe2be8acf33b580a8d6e957"
+  },
+  "evidence/pairs_lab/goals_validation.json": {
+    "bytes": 1108,
+    "sha256": "2ad9526e9c6dc853ad5a2a7ec527be053f15ac77fd1191f5bbd9ec41aeda8c39"
+  },
+  "evidence/pairs_lab/pipeline.json": {
+    "bytes": 706,
+    "sha256": "fc84d12334f61658cce47d85369537f9854d55277c83c15031c1da8d39f80b2b"
+  },
+  "evidence/pairs_lab/pipeline_events.json": {
+    "bytes": 11739,
+    "sha256": "c7c537cdc1dfb0e56cf10b507f76b9284a50b470d616c24c438afdb19744b24e"
+  },
+  "evidence/pairs_lab/scan_alignment.json": {
+    "bytes": 445,
+    "sha256": "6179360690d70cd79796eae1a7ada48211c3d64e58bec45afd0429ed2a021595"
+  },
+  "evidence/pairs_lab/voice_acceptance.json": {
+    "bytes": 4029,
+    "sha256": "ebad2484221dd7b2dea9bacd0d80bb02569b822d79212a27feb245a6a0f62bfc"
+  },
+  "evidence/pairs_lab/source_validation.json": {
+    "bytes": 1042,
+    "sha256": "e15e4a7dc989381de184416f6757480e8a4e507f7514a237c6f7f458977d2cb8"
+  },
+  "evidence/pairs_lab/source_destination_voice/result.json": {
+    "bytes": 2005,
+    "sha256": "a7e25200a95fb4bb4ce5dd47d357f4688bd404178b6c17bc1212c03a645067ba"
+  },
+  "evidence/pairs_lab/source_destination_voice/events.jsonl": {
+    "bytes": 29050,
+    "sha256": "eed1f7c077f62a82aed18d40c564b1b84c8856b7001d7ac137cda0c758474b63"
+  },
+  "evidence/pairs_lab/source_destination_voice/tf_samples.json": {
+    "bytes": 42711,
+    "sha256": "87606db5d134e90b01c50e2f99f9a7f21f69b8fa14a451ce76b357b9dee282ee"
+  },
+  "evidence/pairs_lab/source_destination_voice/attempts.json": {
+    "bytes": 4754,
+    "sha256": "ee28af6e7a8f0f05ca23dfe266f6acb8b359f03cf480cd5207ebeec0c0d7091a"
+  },
+  "evidence/pairs_lab/unknown_region_voice/acceptance.json": {
+    "bytes": 1631,
+    "sha256": "f3af9ca02186af5b3840e42d66c607c65d2b2e48cc4d53677c852c1c228d4736"
+  },
+  "evidence/pairs_lab/unknown_region_voice/events.jsonl": {
+    "bytes": 2304,
+    "sha256": "6078bf1298e630191fa2a82031884ac64c97a06daf0b586a049773fd6d7a96a3"
+  },
+  "evidence/pairs_lab/unknown_region_voice/tf_samples.json": {
+    "bytes": 8960,
+    "sha256": "51e86a1a8348c4a3df682df0ae9dc8612b699cddb7aaa3cfd08d81aae52aed15"
+  },
+  "evidence/pairs_lab/unknown_region_voice/attempts.json": {
+    "bytes": 518,
+    "sha256": "f86b7be670a5dba7a8a3bc2bcce545e36f236b40541fe4c0243ed9592aeb4678"
+  },
+  "evidence/pairs_lab/trajectory_pairs/results.json": {
+    "bytes": 1994,
+    "sha256": "86f6c92c326475ab33386783c07b2837d6237507f03e7131786ab59c2718aab1"
+  },
+  "evidence/pairs_lab/trajectory_pairs/tf_samples.jsonl": {
+    "bytes": 168664,
+    "sha256": "97f68dc811988fdc3be9cfa32d656969660be0144eb23735a825a9f8dd5192c9"
+  },
+  "evidence/pairs_lab/trajectory_pairs/amcl_samples.jsonl": {
+    "bytes": 103867,
+    "sha256": "dd5f3554c0703fcb79e14f3b576eb4bc623243774b1a1e21fc8dc5f1c30cf8c2"
+  },
+  "evidence/pairs_lab/trajectory_pairs/validation.json": {
+    "bytes": 410,
+    "sha256": "3e479bb4a42b7c10bdddf7aa96ea5e51ecf555fabc24d946daccd3c2995d2a91"
+  },
+  "evidence/pairs_lab/rviz_multiwaypoint/result.json": {
+    "bytes": 322,
+    "sha256": "8c35c38ff3bb855102d9efc8045de7d31a1176dc956eb2cd79e78d2c79c0b4d2"
+  },
+  "evidence/pairs_lab/rviz_multiwaypoint/events.jsonl": {
+    "bytes": 49047,
+    "sha256": "9b9025e1bddf40f47023ed751cf29e586aa8d122046176deacf2038b620149fe"
+  },
+  "evidence/pairs_lab/rviz_multiwaypoint/capture.json": {
+    "bytes": 23121,
+    "sha256": "8336346c4d98e344bf9865e645969ff7ba87bd80a9ef9f25d30126ec08634814"
+  },
+  "src/tb4_voice_navigation/maps/pairs_lab.pgm": {
+    "bytes": 243615,
+    "sha256": "02e8972f0ca9c8893ba2df281b86418fbb336e994c7f44583d0617f75ef8e4fa"
+  },
+  "src/tb4_voice_navigation/maps/pairs_lab.yaml": {
+    "bytes": 133,
+    "sha256": "2eca4f0c8611f9547831ef00c4bcd28940f7c48e451c74f658da8009ff277101"
+  },
+  "src/tb4_voice_navigation/config/pairs_regions.yaml": {
+    "bytes": 2610,
+    "sha256": "178a8c92116b0852a4d291a9543df7dae71a2a6980ab73d80b9891ea7a7c116e"
+  }
+}
