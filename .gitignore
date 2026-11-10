@@ -1,26 +1,26 @@
-.venv/
-build/
-install/
-log/
+# Local environments and build outputs
+/.venv/
+/build/
+/install/
+/log/
 __pycache__/
 .pytest_cache/
+.ruff_cache/
 *.pyc
 *.egg-info/
+
+# Reports, recordings, and experiment output stay local
+/docs/
+/submission/
+/evidence/
+/deliverables/
+*.pdf
+*.tex
 *.wav
-evidence/voice_demo/
-*.db3
-*.mcap
-*.pt
-*.onnx
-deliverables/
-evidence/video_demo/
 *.mp4
 *.mkv
-.ruff_cache/
-.env
-.env.*
-*.key
-*.pem
+*.db3
+*.mcap
 *.aux
 *.toc
 *.lof
@@ -28,23 +28,22 @@ evidence/video_demo/
 *.out
 *.synctex.gz
 
-# Keep machine-specific history local; publish only selected evidence.
-evidence/*
-!evidence/pairslab_redesign/
-evidence/pairslab_redesign/*
-!evidence/pairslab_redesign/*.json
-!evidence/pairslab_redesign/goals_validation.yaml
-!evidence/pairslab_redesign/pytest.xml
-!evidence/publication/
-evidence/publication/*
-!evidence/publication/validation.json
+# Keep only application utilities in the top-level scripts directory
+/scripts/*
+!/scripts/download_model.py
+!/scripts/initialize_localization.py
+!/scripts/pairslab_camera.py
 
-# The exported demo is intentionally public; raw audio/video stays ignored.
-!submission/PAIRS_Lab_Demo_1080p.mp4
+# Local RViz layouts used for report screenshots
+/src/tb4_voice_navigation/rviz/pairs_lab_idle.rviz
+/src/tb4_voice_navigation/rviz/pairs_lab_multiwaypoint.rviz
+/src/tb4_voice_navigation/rviz/pairs_lab_report.rviz
+/src/tb4_voice_navigation/rviz/pairs_lab_source_destination.rviz
 
-# Machine-process receipt is local history, not a submission artifact.
-evidence/pairslab_redesign/shutdown.json
-
-!submission/figure7_terminal_live.mp4
-
-!submission/source_destination_voice_demo.mp4
+# Model caches and local secrets
+*.pt
+*.onnx
+.env
+.env.*
+*.key
+*.pem
