@@ -5,17 +5,17 @@
   "voice_in_video": "one real microphone command -> ASR -> parser A -> real simulated Nav2 success",
   "voice_attempts_in_filmed_session": "2 recordings: NO_SPEECH then success; final clip uses success",
   "tour": "labelled keyboard transcripts, 2x playback, resumed after localization loss",
-  "video_duration_s": 265.754362,
+  "video_duration_s": 375.821,
   "raw_files": "kept locally; raw WAV/video not included in public export",
   "latex": "../docs/bao_cao_bai7.tex; placeholders only; not compiled",
   "files": {
     "CHAPTERS.md": {
-      "bytes": 627,
-      "sha256": "c7a6d2e078f5d85f48eb75a9fb968d7543c55831ed68407f6f842ff893598b8f"
+      "bytes": 754,
+      "sha256": "ab80e3210d9164fa483f515be8c1e1189defce25b79adf92e0f28a59cf9bd76f"
     },
     "PAIRS_Lab_Demo_1080p.mp4": {
-      "bytes": 7162807,
-      "sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456"
+      "bytes": 8384431,
+      "sha256": "dd0afd4a0ebea110032f74d27b4fadf62fc24288a9bce3b28c4f100dcf537ac3"
     },
     "config/pairs_regions.yaml": {
       "bytes": 2610,
@@ -70,20 +70,20 @@
       "sha256": "c7c537cdc1dfb0e56cf10b507f76b9284a50b470d616c24c438afdb19744b24e"
     },
     "evidence/render_manifest.json": {
-      "bytes": 13662,
-      "sha256": "f79991ed118c7bef023f9e7629914fe2fa170f464a3efdcd5e2578c327370e75"
+      "bytes": 14253,
+      "sha256": "48cb43b726c30b5313bdb6664155d321a9a9b8b381ee64f63c043305e6104fb1"
     },
     "evidence/scan_alignment.json": {
       "bytes": 445,
       "sha256": "6179360690d70cd79796eae1a7ada48211c3d64e58bec45afd0429ed2a021595"
     },
     "evidence/source_validation.json": {
-      "bytes": 522,
-      "sha256": "fb2dd4d7544c87b3534fe27054dd9dc5babc5912e47749ff66538f7331d9ef0d"
+      "bytes": 1042,
+      "sha256": "e15e4a7dc989381de184416f6757480e8a4e507f7514a237c6f7f458977d2cb8"
     },
     "evidence/video_acceptance.json": {
-      "bytes": 9757,
-      "sha256": "1cfb6980bc112e7e2edac48dcca02cac5906a0c70c16c79d8002199c6556b880"
+      "bytes": 10053,
+      "sha256": "efd92bdcf726d7dd18a4deaa130f4236ae26a3fe60e5d7239dcf87ed5de16547"
     },
     "evidence/voice_acceptance.json": {
       "bytes": 4029,
@@ -234,8 +234,8 @@
       "sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1"
     },
     "README.md": {
-      "bytes": 7412,
-      "sha256": "7197249e1d12973c37a22523d77edd650df5c6d247368747911bb9d5d2e58618"
+      "bytes": 8174,
+      "sha256": "a8188500f7cc287f7c33297d48b586b813ef6d8fb6bf91846e3d00099c54b3b3"
     },
     "figures/figure15_room_arrivals.png": {
       "bytes": 976104,
@@ -246,8 +246,8 @@
       "sha256": "e9c847db2eaa30bee0b67177e63fa55b86f2d7ff8db536309bb4aade8d089d43"
     },
     "evidence/video_style.json": {
-      "bytes": 2009,
-      "sha256": "58a7bf9a8f5aec8355f6c90146f2f53bde94f52bed130f2c79326f89f797944e"
+      "bytes": 2345,
+      "sha256": "157a5820c4ba4f7874864817204378b4786c4c9e298482d6571c30ed1a856fa4"
     },
     "figures/trajectory_pairs.png": {
       "bytes": 202865,
@@ -340,7 +340,76 @@
     "evidence/unknown_region_voice/rviz_context.json": {
       "bytes": 953004,
       "sha256": "8ae935c91881b0cf1cbe9a30e5d718424ec07c36a7bc1b93797bf244e7ed2b01"
+    },
+    "source_destination_voice_demo.mp4": {
+      "bytes": 1221865,
+      "sha256": "9d439aeca2d2fac30e61dfeeca1a5feec8856a5d6d5122074b4ffc1148651bc3"
+    },
+    "evidence/source_destination_voice/video.json": {
+      "bytes": 2553,
+      "sha256": "54d7a09d339b26583049efc688096c3ee2783b76bd5d076164f0835af206a1b8"
+    },
+    "evidence/source_destination_voice/result.json": {
+      "bytes": 2005,
+      "sha256": "a7e25200a95fb4bb4ce5dd47d357f4688bd404178b6c17bc1212c03a645067ba"
+    },
+    "evidence/source_destination_voice/terminal.log": {
+      "bytes": 2249,
+      "sha256": "1a8ea89521615f6053e50b79c60d986b66b42cf6bd61964bffc1c4ad84ed4fbb"
+    },
+    "evidence/source_destination_voice/tf_samples.json": {
+      "bytes": 42711,
+      "sha256": "87606db5d134e90b01c50e2f99f9a7f21f69b8fa14a451ce76b357b9dee282ee"
+    },
+    "evidence/source_destination_voice/position_at_F.json": {
+      "bytes": 323,
+      "sha256": "a29ddaf504c437ebf6520e8f3ceb2a220ff6abd533415d18e141a3bf504eac1b"
+    },
+    "evidence/source_destination_voice/events.jsonl": {
+      "bytes": 29050,
+      "sha256": "eed1f7c077f62a82aed18d40c564b1b84c8856b7001d7ac137cda0c758474b63"
+    },
+    "evidence/source_destination_voice/README.md": {
+      "bytes": 1958,
+      "sha256": "1b403e301b33676d6b6cc0d53c47e432f0bba1c7f8153b130a34b52c5044bb95"
+    },
+    "evidence/source_destination_voice/attempts.json": {
+      "bytes": 4754,
+      "sha256": "ee28af6e7a8f0f05ca23dfe266f6acb8b359f03cf480cd5207ebeec0c0d7091a"
+    },
+    "evidence/source_destination_voice/rviz_succeeded.json": {
+      "bytes": 435,
+      "sha256": "1448e021bb1d9704ed59e9a021a24fde8edd3ffae6d120d35ed5c163446b6176"
+    },
+    "evidence/source_destination_voice/ci_tests.log": {
+      "bytes": 193,
+      "sha256": "84ca87fa46498422bc1f17f8279deec59745675a5abcd89c5fe7025124ea9576"
+    },
+    "evidence/source_destination_voice/preprocessing_tests.log": {
+      "bytes": 179,
+      "sha256": "7ff2a2ff36e76d38e60c0fe068ac449a8ab91e012364b84bd053ca6d5828e5e2"
+    },
+    "evidence/source_destination_voice/position_at_F.log": {
+      "bytes": 419,
+      "sha256": "195d808cc1b81a9afe7d163c2fbfdbcf47172492649cea6ad0bcda762a052277"
+    },
+    "evidence/source_destination_voice/build.log": {
+      "bytes": 113,
+      "sha256": "9805945cb7016276c06cbba5663774e2949575a1ee1131a27264ec05caf095d2"
+    },
+    "figures/source_destination_rviz_succeeded.png": {
+      "bytes": 38904,
+      "sha256": "acabe51cbfff3ac9183184fe5c0a7f0f0ac9c91fcd4112e92071a6a327902999"
+    },
+    "figures/source_destination_voice_succeeded.png": {
+      "bytes": 520341,
+      "sha256": "a8c13043b0fbfec88c6dc44945fcd068bc3c6376dba4b64ef6e7d768168bdf15"
+    },
+    "figures/source_destination_A_to_B.png": {
+      "bytes": 115143,
+      "sha256": "7bf5caa331009d54144bccf7436a813c4a0cc8c2940bfc091e4bd106b12d8b32"
     }
   },
-  "figure7": "Direct screenshot and continuous terminal capture from a new real microphone/ASR/parser/Nav2 run on 2026-11-10; see evidence/figure7_live_acceptance.json"
+  "figure7": "Direct screenshot and continuous terminal capture from a new real microphone/ASR/parser/Nav2 run on 2026-11-10; see evidence/figure7_live_acceptance.json",
+  "source_destination_voice": "Real microphone F -> A -> B; SUCCEEDED; native terminal clip appended from 04:26"
 }

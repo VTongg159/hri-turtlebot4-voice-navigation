@@ -349,8 +349,9 @@ Thời lượng tối thiểu & $0.4$~s; đoạn ngắn hơn trả NO\_AUDIO. \\
 RMS tối thiểu & $0.008$ trên mẫu chuẩn hóa về khoảng $[-1,1]$. \\
 Clipping tối đa & Tỷ lệ mẫu có $|a|>0.995$ không vượt $0.08$. \\
 Language, beam, temperature & \code{vi}, beam size $5$, temperature $0$. \\
-VAD & Bật; min speech $250$~ms, min silence $400$~ms. \\
-Điểm segment & avg\_logprob $\geq-0.8$, no\_speech\_prob $\leq0.5$. \\
+High-pass & Butterworth bậc hai, cutoff $80$~Hz trước VAD/ASR; WAV gốc được giữ nguyên. \\
+  VAD & Bật; min speech $250$~ms, min silence $400$~ms. \\
+Điểm segment & avg\_logprob $\geq-0.8$; silence được kiểm tra kết hợp với log-probability theo Whisper, ngưỡng no\_speech\_prob $0.5$. \\
 Giới hạn văn bản & Không rỗng, tối đa $240$ ký tự, ít nhất hai ký tự chữ. \\
 \bottomrule
 \end{tabularx}
@@ -561,8 +562,73 @@ log gốc và event ROS cùng command\_id. WAV lưu local, kèm hash đối chi�
 Sau nhiệm vụ, TF đo được $(-9.067,3.497)$~m nằm trong vùng A; không coi
 đây là pose đúng thời điểm terminal action.
 
+\subsection{Lệnh nguồn--đích và lệnh nhiều điểm}
+Để kiểm tra yêu cầu ``đi qua A trước khi đến B'', robot được dẫn tới
+phòng F bằng Nav2 trước khi nhận lệnh giọng nói
+``Đi từ khu vực A đến khu vực B''. TF xuất phát trong hệ map là
+$(7.080; -3.462)$~m, nằm trong vùng F. Kết quả ở Bảng~\ref{tab:srcdst}.
+
+\begin{table}[H]
+\centering\small
+\caption{Lệnh nguồn--đích bằng giọng nói trong PAIRS Lab.}
+\label{tab:srcdst}
+\begin{tabularx}{\linewidth}{@{}lY@{}}
+\toprule
+Mục & Kết quả \\
+\midrule
+Vị trí xuất phát & F -- Phòng TurtleBot. \\
+Transcript & ``Đi từ khu vực A đến khu vực B''. \\
+Lộ trình parser & [A,B], \texttt{source\_destination};
+\texttt{starts\_from\_source=true}. Robot đi từ F tới A rồi tới B. \\
+Thời gian đoạn tới A / A$\to$B (s) & 57,049 / 41,801. \\
+Kết quả Nav2 & Cả A và B đều \texttt{SUCCEEDED};
+\texttt{action\_status=4}, \texttt{error\_code=0}. \\
+Số lượt thu & 6 trong toàn phiên; 2 với cấu hình ASR cuối. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Thời gian từng đoạn được tính từ \texttt{GOAL\_ACCEPTED} đến
+\texttt{ACTION\_TERMINAL} của action navigation, lọc theo
+\texttt{command\_id}: \path{1af3f6bf42ac4fe294a391b0a2dfccf9}.
+Log ghi A đạt \texttt{SUCCEEDED} trước khi goal B được chấp nhận,
+xác nhận robot thực hiện đúng thứ tự nguồn--đích.
+
+Toàn phiên có bốn lượt \texttt{NO\_SPEECH}, một lượt ASR nhận
+``Đi từ khu mực A đến khu mực B'' và bị từ chối với
+\texttt{UNKNOWN\_REGION}, sau đó một lượt hoàn thành.
+Lượt đầu người dùng chưa kịp nói. Trong quá trình chuẩn bị đã bổ sung
+high-pass Butterworth bậc hai, cutoff 80~Hz, trước VAD/ASR và sửa
+cổng silence theo quy tắc kết hợp của Whisper. Các ngưỡng số vẫn là
+\texttt{avg\_logprob} $-0.8$ và \texttt{no\_speech\_prob} $0.5$.
+Hai lượt dùng cấu hình cuối lần lượt là \texttt{UNKNOWN\_REGION}
+và \texttt{SUCCEEDED}; không dùng tỷ lệ của cả phiên để suy ra
+độ chính xác ASR với một cấu hình cố định.
+
+Clip bổ sung dài khoảng 1 phút 50 giây ghi liên tục terminal của lượt
+đạt, kèm âm thanh microphone cùng lượt, tốc độ $1\times$.
+Clip được nối vào video demo từ khoảng 04:26. RViz bị che trong lúc
+quay nên clip bổ sung trình bày phần terminal; ảnh RViz sau khi tới B
+được lưu riêng để đối chiếu.
+% Clip: submission/source_destination_voice_demo.mp4
+% Ảnh terminal: submission/figures/source_destination_voice_succeeded.png
+% Ảnh RViz sau nhiệm vụ: submission/figures/source_destination_rviz_succeeded.png
+% Log: submission/evidence/source_destination_voice/
+
+Với lệnh nhiều điểm (câu~3 trong bảng thử giọng nói), parser xác định
+A$\to$C$\to$D và cả ba waypoint đều đạt \texttt{SUCCEEDED} trong
+phiên microphone ngày 09/11/2026. Hình~\ref{fig:rviz_multi} được chụp
+trong một lượt bổ sung bằng keyboard input ``Đi từ A qua C đến D'',
+khi robot đang di chuyển ở chặng C$\to$D. Đường \texttt{/plan} trên
+RViz là planned path của chặng đang thực hiện; status marker hiển thị
+chuỗi waypoint đầy đủ A$\to$C$\to$D.
+% Ảnh: submission/figures/rviz_multiwaypoint_plan.png
+\placeholderfigure{5cm}{RViz hiển thị các vùng A--F, goal marker và
+planned path của Nav2 trong lượt keyboard input A$\to$C$\to$D,
+chụp khi robot đang ở giữa chặng C$\to$D.}{fig:rviz_multi}
+
 \subsection{Video và tuyến đi đủ năm phòng}
-Video bàn giao dài khoảng \textbf{4 phút 26 giây}, $1920\times1080$,
+Video bàn giao sau bổ sung dài khoảng \textbf{6 phút 16 giây}, $1920\times1080$,
 $15$~fps, audio AAC. Đã kiểm tra giải mã toàn bộ file không có lỗi.
 Các phần gồm nhận diện logo, toàn cảnh, góc cận từng phòng, một câu voice
 thật tới UAV và tour Nav2 dùng văn bản tới các phòng còn lại.
@@ -618,7 +684,7 @@ chụp sau SUCCEEDED. Không dùng model trưng bày thay robot điều hướng
 \textbf{Xác nhận phạm vi video:} có một đoạn thể hiện đầy đủ nhận lệnh
 giọng nói, xác định đích và robot di chuyển đến đích. Không phải toàn bộ
 tour năm phòng đều được gọi bằng microphone. Video hiện tại cũng chưa
-chứa riêng tất cả sáu dạng demo trong đề gốc: câu gọi ID, câu nguồn--đích,
+chứa riêng tất cả sáu dạng demo trong đề gốc: câu gọi ID,
 lệnh Z sai và multi-waypoint voice chưa được quay đầy đủ trong cùng bộ
 clip; trạng thái này được ghi trong kịch bản quay. Phiên ba câu trước
 có audio/log cho multi-waypoint nhưng chưa có video cùng lượt.
@@ -638,9 +704,9 @@ T03 & Goal trong occupied & PASS unit từ chối; bộ goal PAIRS cũng đượ
 T04 & Goal ngoài polygon & PASS unit từ chối, không lấy goal bất kỳ theo tên phòng. \\
 T05 & Đi đến khu vực A & PASS parser unit trên fixture; chưa có clip voice riêng nguyên câu này ở scene cuối. \\
 T06 & Đi đến phòng thí nghiệm & PASS alias unit với campus. Scene PAIRS từ chối tên chung; semantic voice dùng ``phòng UAV''. \\
-T07 & Đi từ A đến B & PASS parser và controller integration lịch sử; chưa chạy lại riêng câu nguồn--đích hai điểm trong PAIRS. \\
+T07 & Đi từ A đến B & PASS microphone thật trong PAIRS: xuất phát F, transcript ``Đi từ khu vực A đến khu vực B, parser [A,B], hai goal SUCCEEDED; xem Bảng~ef{tab:srcdst} và clip bổ sung. \\
 T08 & A qua C đến B & PASS grammar unit/integration lịch sử; PAIRS voice đã chạy route A--C--D, không coi là đã quay nguyên route A--C--B. \\
-T09 & Khu vực Z & PASS unit từ chối toàn bộ lệnh; chưa quay microphone riêng câu Z. \\
+T09 & Khu vực Z & PASS microphone thật: transcript ``Đi đến khu vực Z, UNKNOWN\_REGION, robot IDLE, không có goal được chấp nhận; 88 mẫu TF không đổi vị trí. \\
 T10 & Thiếu microphone & PASS integration lịch sử bằng thiết bị ALSA không tồn tại: báo ASR\_ERROR, không crash. \\
 T11 & Nav2 không sẵn sàng & PASS integration lịch sử: FAILED/NAV2\_NOT\_READY. Chưa lặp lại trên scene PAIRS. \\
 T12 & Goal unreachable & PASS simulation lịch sử: vật cản Gazebo thật, status~6/error~208 và không chạy waypoint sau. Chưa lặp lại trong PAIRS. \\

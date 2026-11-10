@@ -1,12 +1,12 @@
 {
   "final_video": "PAIRS_Lab_Demo_1080p.mp4",
-  "final_sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456",
+  "final_sha256": "dd0afd4a0ebea110032f74d27b4fadf62fc24288a9bce3b28c4f100dcf537ac3",
   "resolution": [
     1920,
     1080
   ],
   "capture_fps": 15,
-  "duration_s": 265.754362,
+  "duration_s": 375.821,
   "parts": [
     {
       "file": "deliverables/pairslab_demo_20261109/edited/01_environment.mp4",
@@ -23,6 +23,11 @@
     {
       "file": "deliverables/pairslab_demo_20261109/edited/03_tour_part2_2x.mp4",
       "duration_s": 32.4
+    },
+    {
+      "file": "submission/source_destination_voice_demo.mp4",
+      "duration_s": 110.066667,
+      "source": "evidence/source_destination_voice/video.json"
     }
   ],
   "voice": {
@@ -434,43 +439,55 @@
       "title": "PAIRS Lab — Research environment"
     },
     {
-      "start": 67.133333,
+      "start": 67.133,
       "title": "T15 — Voice navigation to UAV Lab"
     },
     {
-      "start": 145.066666,
+      "start": 145.067,
       "title": "Nav2 tour — Keyboard input, 2x playback"
     },
     {
-      "start": 146.37639092694855,
+      "start": 146.376,
       "title": "Nav2 — B / Manipulation Lab"
     },
     {
-      "start": 169.42623554956054,
+      "start": 169.426,
       "title": "Nav2 — D / HRI Lab, Unitree G1"
     },
     {
-      "start": 194.3805576492462,
+      "start": 194.381,
       "title": "Nav2 — C / Lobby"
     },
     {
-      "start": 217.9045451809082,
+      "start": 217.905,
       "title": "Nav2 — F / TurtleBot Lab"
     },
     {
-      "start": 233.33333299999998,
+      "start": 233.333,
       "title": "Tour resumed after AMCL update — Edited transition"
     },
     {
-      "start": 234.668241246994,
+      "start": 234.668,
       "title": "Nav2 — E / Quadruped Lab, Unitree Go2"
     },
     {
-      "start": 243.57696996575163,
+      "start": 243.577,
       "title": "Nav2 — C / Lobby"
+    },
+    {
+      "start": 265.754,
+      "title": "T07 — Voice source-destination: F to A to B (1x)"
+    },
+    {
+      "start": 329.9668396034241,
+      "title": "T07 — A reached; continuing to B"
     }
   ],
   "decode_check": "PASS",
   "original_video_sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
-  "style_receipt": "evidence/video_style.json"
+  "style_receipt": "evidence/video_style.json",
+  "before_source_destination_sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456",
+  "source_destination_voice": "evidence/source_destination_voice/video.json",
+  "source_destination_section_start_s": 265.754,
+  "source_destination_clip": "source_destination_voice_demo.mp4"
 }

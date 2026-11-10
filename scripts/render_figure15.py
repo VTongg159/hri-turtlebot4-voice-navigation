@@ -30,9 +30,7 @@ def main():
         assert image.size == (1100, 800)
         canvas.paste(image, (x, y))
         draw.text((x, y + 814), label, font=font, fill="black")
-        assert np.array_equal(
-            np.asarray(image), np.asarray(canvas.crop((x, y, x + 1100, y + 800)))
-        )
+        assert np.array_equal(np.asarray(image), np.asarray(canvas.crop((x, y, x + 1100, y + 800))))
         sources.append(
             dict(
                 file="figures/" + name,

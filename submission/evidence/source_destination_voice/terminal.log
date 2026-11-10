@@ -1,0 +1,28 @@
+Script started on 2026-11-10 21:56:53+07:00 [COMMAND="python -u scripts/record_source_destination_voice.py" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="91" LINES="43"]
+$ python scripts/record_source_destination_voice.py
+Input: real microphone | Expected command: Đi từ khu vực A đến khu vực B
+Waiting for operator. Recording has not started.
+READY. Press Enter to START microphone recording: 
+START: F | TF map -> base_link = (7.080, -3.462) m
+ASR: RECORDING | Đang ghi âm, tối đa 12 giây
+MICROPHONE RECORDING — say the command once, then remain silent.
+RECORDING. Speak once, then press Enter to STOP: 
+Processing ASR; please wait.
+ASR: TRANSCRIPT | Đi từ khu vực A đến khu vực B
+PARSER: {"type": "source_destination", "waypoints": ["A", "B"], "starts_from_source": true, "command_id": "1af3f6bf42ac4fe294a391b0a2dfccf9", "transcript": "Đi từ khu vực A đến khu vực B"}
+NAV2: ACCEPTED | state=VALIDATING | target=A | time=1794322626.1022642 | action= | status= | error=
+NAV2: ACTION_TERMINAL | state=PLANNING | target=A | time=1794322626.1866171 | action=plan | status=4 | error=0
+NAV2: GOAL_ACCEPTED | state=NAVIGATING | target=A | time=1794322626.1963487 | action= | status= | error=
+NAV2: ACTION_TERMINAL | state=NAVIGATING | target=A | time=1794322683.2455122 | action=nav | status=4 | error=0
+NAV2: WAYPOINT_SUCCEEDED | state=NAVIGATING | target=A | time=1794322683.2463448 | action= | status= | error=
+NAV2: ACTION_TERMINAL | state=PLANNING | target=B | time=1794322683.2916741 | action=plan | status=4 | error=0
+NAV2: GOAL_ACCEPTED | state=NAVIGATING | target=B | time=1794322683.3001025 | action= | status= | error=
+NAV2: ACTION_TERMINAL | state=NAVIGATING | target=B | time=1794322725.1007535 | action=nav | status=4 | error=0
+NAV2: WAYPOINT_SUCCEEDED | state=NAVIGATING | target=B | time=1794322725.1018233 | action= | status= | error=
+NAV2: ALL_WAYPOINTS_REACHED | state=SUCCEEDED | target=None | time=1794322725.1025643 | action= | status= | error=
+RESULT: F -> A -> B | SUCCEEDED
+command_id: 1af3f6bf42ac4fe294a391b0a2dfccf9
+Time to A: 57.049 s | A -> B: 41.801 s
+Recording saved. Press Enter to close.
+
+Script done on 2026-11-10 21:59:07+07:00 [COMMAND_EXIT_CODE="0"]

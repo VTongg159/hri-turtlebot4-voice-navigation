@@ -15,14 +15,15 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 | Measured trajectory: A→B→D→C→E→F | [trajectory_pairs.png](figures/trajectory_pairs.png), [TF/AMCL và results](evidence/trajectory_pairs/), [matplotlib script](../scripts/render_pairs_trajectory.py) |
 | RViz multi-waypoint A→C→D | [rviz_multiwaypoint_plan.png](figures/rviz_multiwaypoint_plan.png), [log và plan](evidence/rviz_multiwaypoint/) |
 | Voice từ chối khu vực Z, robot IDLE | [Terminal + RViz](figures/unknown_region_voice_idle_rviz.png), [terminal lúc chạy](figures/unknown_region_voice_idle.png), [log ASR/parser/TF](evidence/unknown_region_voice/) |
+| T07: microphone F→A→B | [Clip bổ sung 1:50](source_destination_voice_demo.mp4), [log và số liệu](evidence/source_destination_voice/), [LaTeX đã điền](../docs/source_destination_results.tex) |
 | Ảnh phân vùng A–F | [pairslab_segmentation.png](maps/pairslab_segmentation.png) |
 | Polygon, tên, aliases và goal | [pairs_regions.yaml](config/pairs_regions.yaml) |
 | Kiểm tra sáu goal | [goals_validation.json](evidence/goals_validation.json) |
-| Video Full HD, khoảng 4:26 | [PAIRS_Lab_Demo_1080p.mp4](PAIRS_Lab_Demo_1080p.mp4) |
+| Video Full HD, khoảng 6:16 | [PAIRS_Lab_Demo_1080p.mp4](PAIRS_Lab_Demo_1080p.mp4) |
 | Mốc thời gian video | [CHAPTERS.md](CHAPTERS.md) |
 | 14 ảnh thật để chèn báo cáo | [figures/](figures/) |
 | Kịch bản và lời dẫn | [KICH_BAN_QUAY_PAIRSLAB.md](../docs/KICH_BAN_QUAY_PAIRSLAB.md) |
-| Build, 87 test, lint và formatter | [source_validation.json](evidence/source_validation.json) |
+| Build, 90 test, lint và formatter | [source_validation.json](evidence/source_validation.json) |
 | Hash và danh mục sản phẩm | [manifest.json](manifest.json) |
 
 ## Video có đúng luồng yêu cầu không?
@@ -55,3 +56,5 @@ Hình14 lấy khung02:19 của video demo09/11/2026, trong phần voice bắt đ
 Video demo đã cập nhật bảng phụ trắng–đen, nhãn kỹ thuật tiếng Anh và chapter titles. Transcript tiếng Việt giữ nguyên ASR thực tế; audio AAC giữ nguyên từng packet. Xem [video_style.json](evidence/video_style.json) để đối chiếu bản gốc và cách ánh xạ ROS events vào timeline.
 
 Trajectory dùng lượt Nav2 riêng mới, ghi map→base_link TF 5 Hz và AMCL, đúng A→B→D→C→E→F. Sáu goal đều SUCCEEDED và pose cuối nằm trong vùng tương ứng. Đây là lượt đo riêng, khác thứ tự tour trong video. Tạo lại hình bằng `python scripts/render_pairs_trajectory.py` từ dữ liệu public.
+
+T07 đã thực hiện riêng bằng microphone: từ F, nói “Đi từ khu vực A đến khu vực B”, parser [A,B], Nav2 lần lượt A rồi B đều SUCCEEDED. Thời gian hai chặng: 57,049 s và 41,801 s. Clip terminal thật được nối từ khoảng04:26, tốc độ1×; video hiện dài khoảng6:16. Ảnh RViz sau nhiệm vụ: [source_destination_rviz_succeeded.png](figures/source_destination_rviz_succeeded.png). Xem attempts.json để phân biệt6lượt thu của toàn phiên với2lượt dùng cấu hình ASR cuối.

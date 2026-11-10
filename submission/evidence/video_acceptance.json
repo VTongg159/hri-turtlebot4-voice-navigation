@@ -1,13 +1,13 @@
 {
   "status": "PASS",
   "video": "PAIRS_Lab_Demo_1080p.mp4",
-  "duration_s": 265.754362,
+  "duration_s": 375.821,
   "resolution": [
     1920,
     1080
   ],
   "capture_fps": 15,
-  "sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456",
+  "sha256": "dd0afd4a0ebea110032f74d27b4fadf62fc24288a9bce3b28c4f100dcf537ac3",
   "decode_check": "PASS",
   "visited": [
     "A",
@@ -350,5 +350,9 @@
     }
   ],
   "original_video_sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
-  "style_receipt": "evidence/video_style.json"
+  "style_receipt": "evidence/video_style.json",
+  "before_source_destination_sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456",
+  "source_destination_voice": "evidence/source_destination_voice/video.json",
+  "source_destination_section_start_s": 265.754,
+  "source_destination_clip": "source_destination_voice_demo.mp4"
 }

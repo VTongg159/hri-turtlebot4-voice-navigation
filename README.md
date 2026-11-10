@@ -142,7 +142,7 @@ python scripts/verify_pairslab_pipeline.py
 python scripts/check_scan_alignment.py
 ```
 
-Kết quả scene mới ở `evidence/pairslab_redesign/`: unit tests, SDF validation, goal validation, native Nav2 đi đủ sáu đích, parser/controller test và scan alignment. Các lượt native navigation không dùng microphone. Thư mục evidence cũ là kết quả campus v1; không dùng kết quả cũ để xác nhận world mới. Nghiệm thu giọng nói thật và các lượt chưa đạt được giữ tại voice_acceptance.json; audio/log gốc trong evidence/voice_demo/ (Git ignore). Đã quay video demo bổ sung 4:26, đủ5phòng và sảnh, có một lệnh microphone cùng lượt; xem [video và kết quả](docs/VIDEO_DEMO_RESULTS.md). Tour văn bản tăng tốc2x, có đoạn nối sau mất định vị được ghi rõ. Xem [báo cáo scene](docs/pairslab_scene_report.pdf) và [trạng thái nghiệm thu](docs/PAIRSLAB_STATUS.md).
+Kết quả scene mới ở `evidence/pairslab_redesign/`: unit tests, SDF validation, goal validation, native Nav2 đi đủ sáu đích, parser/controller test và scan alignment. Các lượt native navigation không dùng microphone. Thư mục evidence cũ là kết quả campus v1; không dùng kết quả cũ để xác nhận world mới. Nghiệm thu giọng nói thật và các lượt chưa đạt được giữ tại voice_acceptance.json; audio/log gốc trong evidence/voice_demo/ (Git ignore). Video demo hiện dài khoảng6:16, có bổ sung T07 microphone F→A→B; phần gốc4:26, đủ5phòng và sảnh, có một lệnh microphone cùng lượt; xem [video và kết quả](docs/VIDEO_DEMO_RESULTS.md). Tour văn bản tăng tốc2x, có đoạn nối sau mất định vị được ghi rõ. Xem [báo cáo scene](docs/pairslab_scene_report.pdf) và [trạng thái nghiệm thu](docs/PAIRSLAB_STATUS.md).
 
 ## Tái tạo world/model
 
@@ -161,7 +161,7 @@ Source và bộ sản phẩm được công khai tại repository nêu trên. Ra
 
 ## Dọn mã và kiểm tra source
 
-Python được định dạng theo Ruff, tách các câu lệnh trên cùng dòng và loại import thừa; cấu hình ở pyproject.toml. Sau dọn mã đã build lại và chạy87test thành công. Không thay đổi grammar, mục tiêu hay chính sách Nav2 để cải thiện số liệu cũ.
+Python được định dạng theo Ruff, tách các câu lệnh trên cùng dòng và loại import thừa; cấu hình ở pyproject.toml. Sau dọn mã đã build lại và chạy90test thành công. Không thay đổi grammar, mục tiêu hay chính sách Nav2 để cải thiện số liệu cũ.
 
 ```bash
 python -m pip install -r requirements-dev.txt
@@ -169,4 +169,6 @@ ruff check src/tb4_voice_navigation scripts
 ruff format --check src/tb4_voice_navigation/tb4_voice_navigation src/tb4_voice_navigation/launch src/tb4_voice_navigation/test src/tb4_voice_navigation/scripts src/tb4_voice_navigation/setup.py scripts
 ```
 
-GitHub Actions kiểm tra lint/format và86pure Python tests; test dùng ROS UUID thật được kiểm tra trong87test colcon local. CI không chạy Gazebo/microphone nên không thay thế integration/T15. Các script ghi hình/xuất báo cáo là công cụ tạo bằng chứng local; script phụ thuộc raw voice/video cần có dữ liệu local tương ứng. `scripts/export_submission.py` tạo bộ public sau khi đối chiếu receipt, hash video và goal.
+GitHub Actions kiểm tra lint/format và89pure Python tests; test dùng ROS UUID thật được kiểm tra trong90test local. CI không chạy Gazebo/microphone nên không thay thế integration/T15. Các script ghi hình/xuất báo cáo là công cụ tạo bằng chứng local; script phụ thuộc raw voice/video cần có dữ liệu local tương ứng. `scripts/export_submission.py` tạo bộ public sau khi đối chiếu receipt, hash video và goal.
+
+T07 nguồn–đích đã chạy microphone thật: F→A→B, transcript “Đi từ khu vực A đến khu vực B”, command_id `1af3f6bf42ac4fe294a391b0a2dfccf9`, hai goal SUCCEEDED. [Clip bổ sung](submission/source_destination_voice_demo.mp4), [log](submission/evidence/source_destination_voice/), [LaTeX đã điền](docs/source_destination_results.tex). ASR hiện lọc high-pass80Hz trước VAD và dùng quy tắc kết hợp no-speech/logprob của Whisper; dữ liệu các phiên cũ giữ nguyên.

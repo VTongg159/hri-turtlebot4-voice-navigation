@@ -27,3 +27,7 @@ Bằng chứng local ở deliverables/pairslab_demo_20261109/: render_manifest.j
 ## Video terminal trực tiếp bổ sung ngày10/11/2026
 
 [Ảnh Hình7](../submission/figures/figure7_terminal_live.png), [ảnh ASR/parser](../submission/figures/figure7_ASR_parser_live.png), [video terminal61.2s](../submission/figure7_terminal_live.mp4) và [log gốc](../submission/evidence/figure7_terminal_live.log) được ghi từ một lượt microphone mới. Đây là cửa sổ ứng dụng đang chạy, không phải bản hiển thị lại dữ liệu sau thử. Phiên có UAB→UNKNOWN_REGION rồi UAV→A→SUCCEEDED; xem figure7_live_acceptance.json. Video môi trường4:26 ngày09/11 vẫn giữ nguyên, video terminal này là bằng chứng bổ sung riêng.
+
+## Bổ sung T07 ngày 10/11/2026
+
+Microphone thật từ F: “Đi từ khu vực A đến khu vực B” → parser [A,B] → lần lượt A rồi B SUCCEEDED. Hai đoạn 57,049 s /41,801 s tính GOAL_ACCEPTED→navigation ACTION_TERMINAL. Clip terminal thật dài1:50, same-session microphone audio, playback1×, nối từ04:26; video tổng hiện khoảng6:16. RViz bị cửa sổ khác che trong clip bổ sung nên phần desktop được crop về terminal; ảnh RViz sau nhiệm vụ lưu riêng. Chi tiết và số lần thử: ../submission/evidence/source_destination_voice/. Mã LaTeX chưa biên dịch: source_destination_results.tex.

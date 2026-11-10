@@ -1,0 +1,4 @@
+[INFO] [1794321895.224129425] [basic_navigator]: Nav2 is ready for use!
+[INFO] [1794321895.225198816] [basic_navigator]: Navigating to goal: 7.0 -3.65...
+GOAL F accepted=True
+{"region": "F", "result": "SUCCEEDED", "elapsed_wall_s": 24.3, "goal": {"x": 7.0, "y": -3.65, "yaw": -1.5707963267948966}, "last_feedback_xy": [7.083620226405639, -3.433018576170651], "distance_to_goal_m": 0.23253662195693373, "recoveries": 0}

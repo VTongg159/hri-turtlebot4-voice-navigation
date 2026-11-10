@@ -54,5 +54,7 @@
     }
   ],
   "decode_check": "PASS",
-  "duration_s": 265.754
+  "duration_s": 265.754,
+  "output_video_version": "https://github.com/VTongg159/hri-turtlebot4-voice-navigation/blob/5f8f390/submission/PAIRS_Lab_Demo_1080p.mp4",
+  "note_after_source_destination_append": "This style receipt refers to the 4:26 version before T07 was appended. See evidence/source_destination_voice/video.json for the current combined video."
 }

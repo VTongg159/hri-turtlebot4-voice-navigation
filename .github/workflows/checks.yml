@@ -13,7 +13,7 @@ jobs:
         run: >-
           python -m pip install -r requirements-dev.txt
           'numpy>=1.26,<2' 'opencv-python-headless>=4.10,<4.12'
-          PyYAML matplotlib
+          PyYAML matplotlib 'scipy>=1.11'
       - name: Lint
         run: ruff check src/tb4_voice_navigation scripts
       - name: Formatting

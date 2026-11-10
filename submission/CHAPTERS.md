@@ -10,5 +10,7 @@
 - **03:53** Tour resumed after AMCL update — Edited transition
 - **03:54** Nav2 — E / Quadruped Lab, Unitree Go2
 - **04:03** Nav2 — C / Lobby
+- **04:25** T07 — Voice source-destination: F to A to B (1x)
+- **05:29** T07 — A reached; continuing to B
 
-Voice audio and footage belong to the same recording session. Keyboard tour: 2× playback. Edited transition after stationary AMCL updates.
+Original tour uses labelled keyboard input at 2x; appended source-destination trial uses real microphone audio and continuous native screen recording at 1x.

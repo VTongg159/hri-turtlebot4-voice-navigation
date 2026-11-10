@@ -16,6 +16,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, DurabilityPolicy
 from std_msgs.msg import String
 from std_srvs.srv import Trigger
+from .audio_preprocessing import prepare_asr_audio
 
 
 class VoiceRecognitionNode(Node):
@@ -32,6 +33,7 @@ class VoiceRecognitionNode(Node):
             max_clipping_fraction=0.08,
             min_avg_logprob=-0.8,
             max_no_speech_probability=0.5,
+            audio_highpass_hz=80.0,
             recordings_dir="",
             audit_file="",
         )
@@ -225,9 +227,12 @@ class VoiceRecognitionNode(Node):
                     f.setframerate(16000)
                     f.writeframes(raw)
                 metrics["audio_file"] = str(filename)
+            filtered = prepare_asr_audio(samples, highpass_hz=self.p("audio_highpass_hz"))
+            metrics["audio_highpass_hz"] = self.p("audio_highpass_hz")
+            metrics["asr_rms"] = float(np.sqrt(np.mean(filtered * filtered)))
             self.events.put(("TRANSCRIBING", "Đang nhận dạng tiếng Việt", metrics))
             segments, info = self.model.transcribe(
-                samples,
+                filtered,
                 language="vi",
                 beam_size=5,
                 temperature=0.0,
@@ -235,13 +240,27 @@ class VoiceRecognitionNode(Node):
                 vad_parameters=dict(min_speech_duration_ms=250, min_silence_duration_ms=400),
                 condition_on_previous_text=False,
                 max_new_tokens=100,
+                # Whisper combines no-speech probability with decode confidence;
+                # high-confidence speech must not be discarded by no-speech alone.
+                # https://github.com/openai/whisper/blob/main/whisper/transcribe.py
+                no_speech_threshold=self.p("max_no_speech_probability"),
+                log_prob_threshold=self.p("min_avg_logprob"),
             )
             accepted = []
+            confidence = []
             for segment in segments:
-                if segment.avg_logprob >= self.p(
-                    "min_avg_logprob"
-                ) and segment.no_speech_prob <= self.p("max_no_speech_probability"):
+                keep = segment.avg_logprob >= self.p("min_avg_logprob")
+                confidence.append(
+                    dict(
+                        text=segment.text.strip(),
+                        avg_logprob=segment.avg_logprob,
+                        no_speech_probability=segment.no_speech_prob,
+                        accepted=keep,
+                    )
+                )
+                if keep:
                     accepted.append(segment.text.strip())
+            metrics["segments"] = confidence
             transcript = " ".join(" ".join(accepted).split())
             metrics["vad_speech_seconds"] = float(info.duration_after_vad)
             if self.discarded or self.closed:
