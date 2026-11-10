@@ -116,6 +116,19 @@ class RegionVisualizationNode(Node):
                 g = self.semantic.regions[key]["goal"]
                 line.points.append(Point(x=float(g["x"]), y=float(g["y"]), z=0.045))
             result.markers.append(line)
+        if self.status:
+            # Show the state actually received from the live controller, including
+            # terminal states for which current_target is intentionally empty.
+            state = self.status.get("state", "")
+            color = (0.25, 0.95, 0.65) if state == "SUCCEEDED" else (1.0, 0.8, 0.25)
+            status = self.marker("navigation_status", 0, Marker.TEXT_VIEW_FACING, color)
+            status.pose.position = Point(x=0.0, y=11.4, z=0.2)
+            status.scale.z = 0.48
+            status.text = "Nav2: " + state + " | route: " + " -> ".join(route)
+            identity = self.status.get("command_id", "")
+            if identity:
+                status.text += "\ncommand_id: " + identity
+            result.markers.append(status)
         self.pub.publish(result)
 
 
