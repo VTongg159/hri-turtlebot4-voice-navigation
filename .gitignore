@@ -44,3 +44,5 @@ evidence/publication/*
 
 # Machine-process receipt is local history, not a submission artifact.
 evidence/pairslab_redesign/shutdown.json
+
+!submission/figure7_terminal_live.mp4

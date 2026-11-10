@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "date": "2026-11-10",
+  "input_source": "real microphone",
+  "capture_method": "direct X11 capture of the live ROS trial terminal; original image and video bytes copied unchanged",
+  "replayed": false,
+  "rendered_from_saved_log": false,
+  "capture_started_wall_time": 1794276235.840031,
+  "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+  "actual_transcript": "đi đến phòng UAV",
+  "parsed": {
+    "type": "single",
+    "waypoints": [
+      "A"
+    ],
+    "starts_from_source": false,
+    "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+    "transcript": "đi đến phòng UAV"
+  },
+  "navigation_terminal": {
+    "sequence": 35,
+    "state": "SUCCEEDED",
+    "event": "ALL_WAYPOINTS_REACHED",
+    "message": "Nhiệm vụ kết thúc",
+    "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+    "waypoints": [
+      "A"
+    ],
+    "waypoint_index": 1,
+    "current_target": null,
+    "busy": false,
+    "wall_time": 1794276294.3580325
+  },
+  "action_results": [
+    {
+      "sequence": 23,
+      "state": "PLANNING",
+      "event": "ACTION_TERMINAL",
+      "message": "Đã nhận terminal result thật",
+      "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+      "waypoints": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "current_target": "A",
+      "busy": true,
+      "wall_time": 1794276280.941086,
+      "action_kind": "plan",
+      "action_status": 4,
+      "error_code": 0
+    },
+    {
+      "sequence": 33,
+      "state": "NAVIGATING",
+      "event": "ACTION_TERMINAL",
+      "message": "Đã nhận terminal result thật",
+      "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+      "waypoints": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "current_target": "A",
+      "busy": true,
+      "wall_time": 1794276294.356276,
+      "action_kind": "nav",
+      "action_status": 4,
+      "error_code": 0
+    }
+  ],
+  "attempt_count": 2,
+  "failed_attempts": [
+    {
+      "actual_transcript": "Đi đến phòng UAB",
+      "error": {
+        "code": "UNKNOWN_REGION",
+        "message": "Không tìm thấy khu vực: phong uab"
+      },
+      "no_navigation_goal": true
+    }
+  ],
+  "result": {
+    "trial": 1,
+    "expected_sentence": "Đi đến phòng UAV.",
+    "expected_waypoints": [
+      "A"
+    ],
+    "started_wall_time": 1794276274.0093625,
+    "input_source": "real microphone",
+    "passed": true,
+    "asr": {
+      "event": "TRANSCRIPT",
+      "message": "đi đến phòng UAV",
+      "ready": true,
+      "busy": false,
+      "wall_time": 1794276280.839285,
+      "recording_id": 3,
+      "duration": 4.7341875,
+      "rms": 0.05819273740053177,
+      "clipping_fraction": 0.0,
+      "audio_file": "evidence/voice_demo/figure7_live_20261110_take2/audio/20261110_090438_58bfa1f0.wav",
+      "vad_speech_seconds": 2.24
+    },
+    "actual_transcript": "đi đến phòng UAV",
+    "parsed": {
+      "type": "single",
+      "waypoints": [
+        "A"
+      ],
+      "starts_from_source": false,
+      "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+      "transcript": "đi đến phòng UAV"
+    },
+    "navigation_terminal": {
+      "sequence": 35,
+      "state": "SUCCEEDED",
+      "event": "ALL_WAYPOINTS_REACHED",
+      "message": "Nhiệm vụ kết thúc",
+      "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+      "waypoints": [
+        "A"
+      ],
+      "waypoint_index": 1,
+      "current_target": null,
+      "busy": false,
+      "wall_time": 1794276294.3580325
+    }
+  },
+  "arrival_pose": {
+    "x": -9.066796424931717,
+    "y": 3.497387522951732,
+    "z": 0.0,
+    "inside_region": true,
+    "region": "A",
+    "measured_wall_time": 1794276395.7423189,
+    "meaning": "measured after mission; not claimed as exact terminal pose"
+  },
+  "video_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1308,
+        "height": 996,
+        "r_frame_rate": "5/1"
+      }
+    ],
+    "format": {
+      "duration": "61.200000"
+    }
+  },
+  "video_decode_check": "PASS",
+  "audio_sha256": "0166a78afc083d53e44641ed640899a5ad4ea355be8698813d4575dc5faebe5f",
+  "raw_audio_policy": "kept locally; not included in public source",
+  "source_session": "evidence/voice_demo/figure7_live_20261110_take2",
+  "source_files": {
+    "figures/figure7_terminal_live.png": {
+      "bytes": 157030,
+      "sha256": "d50ee7ac080c229b5e939f2dd78ea0a637c1cf281abd67addc0a6f9159c19fa2"
+    },
+    "figures/figure7_ASR_parser_live.png": {
+      "bytes": 150128,
+      "sha256": "50ad918ad0c5ed32e97af7103eceeabf67c364017039f1601ffa21a5192e3789"
+    },
+    "figure7_terminal_live.mp4": {
+      "bytes": 944433,
+      "sha256": "0248e81fd847a17be07389f77c80c0ec73e791cd00d5d00a2ad441779a456569"
+    },
+    "evidence/figure7_terminal_live.log": {
+      "bytes": 3359,
+      "sha256": "12afac05f97ac632ac62bff7cbd50a25f19d0f5e1cf990cd9a812b8e47816087"
+    },
+    "evidence/figure7_live_events.jsonl": {
+      "bytes": 15932,
+      "sha256": "5be9896f26e5feb8fc98a9a615c301f01194d4d011ad36da850018918aaaf572"
+    },
+    "evidence/figure7_live_results.json": {
+      "bytes": 2426,
+      "sha256": "ff4ee0828f03e6bbdecd8a5167fc93d782f511fc03fab3e2a47e7ca618022ceb"
+    },
+    "evidence/figure7_live_asr.jsonl": {
+      "bytes": 1653,
+      "sha256": "bbbc3aa88e378ab0189b21517cc7d0e241634a393bbe353ee2f86487cbcfff3a"
+    },
+    "evidence/figure7_arrival_pose.json": {
+      "bytes": 228,
+      "sha256": "ff86162af4b3adc64eef6c2b4ce0d8d800620e7d671297160d5e5a9e5a23deae"
+    }
+  }
+}

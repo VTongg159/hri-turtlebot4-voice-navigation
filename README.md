@@ -15,6 +15,12 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 
 ![Toàn cảnh Gazebo thật](docs/pairslab_overview.png)
 
+## Hình 7 — chụp trực tiếp terminal ngày10/11/2026
+
+[Ảnh terminal sau khi robot đến A](submission/figures/figure7_terminal_live.png) · [Ảnh ASR/parser](submission/figures/figure7_ASR_parser_live.png) · [Video cửa sổ terminal](submission/figure7_terminal_live.mp4) · [Log gốc](submission/evidence/figure7_terminal_live.log) · [Receipt](submission/evidence/figure7_live_acceptance.json).
+
+Đây là lượt microphone mới, bộ ghi hình bật trước thu âm; ảnh/video/log được copy nguyên bytes từ phiên chạy. ASR lần đầu nhận UAB→UNKNOWN_REGION, không gửi goal; lần sau nhận đúng UAV→A→Nav2 SUCCEEDED. Ảnh biên soạn lại trước đó đã được rút khỏi bộ bàn giao. Raw WAV vẫn giữ local.
+
 ## Các khu nghiên cứu
 
 | ID | Khu | Model và thiết bị | Goal map x,y (m) |

@@ -399,8 +399,9 @@ tên chung này bị từ chối; demo semantic dùng tên cụ thể ``phòng U
 Đây là thay đổi có chủ đích của scene cuối, không kết luận nguyên văn
 câu T06 đã được chấp nhận ở scene PAIRS.
 
-\placeholderfigure{5cm}{Giao diện push-to-talk, transcript ASR thực tế,
-route parser và command\_id của câu ``Đi đến phòng UAV''.}{fig:asr}
+\placeholderfigure{6cm}{Ảnh chụp trực tiếp terminal trong lượt thử ngày
+  10/11/2026: push-to-talk, transcript ASR, parser xác định vùng A cùng
+  command\_id và kết quả Nav2 SUCCEEDED của câu lệnh đến phòng UAV.}{fig:asr}
 
 \section{Tích hợp ROS 2 Nav2 và xử lý lỗi}
 Controller kiểm tra cấu trúc request và tất cả region trước khi nhận
@@ -541,6 +542,22 @@ gồm toàn bộ thời gian người nói. Tỷ lệ hoàn thành theo lượt 
 này là $3/6$; chỉ một trong ba câu đạt ngay lượt đầu. Sau thử lại, cả ba
 câu có lượt hoàn thành. Các tỷ lệ này không phải word error rate hoặc
 độ chính xác ASR tổng quát vì chỉ có một người nói và rất ít mẫu.
+
+\subsection{Ảnh terminal trực tiếp bổ sung ngày 10/11/2026}
+Để chụp Hình~\ref{fig:asr}, thực hiện một phiên microphone mới với bộ
+quay màn hình bật trước khi thu âm. Lần đầu ASR nhận ``Đi đến phòng UAB'',
+parser trả UNKNOWN\_REGION và không gửi goal. Lần sau ASR nhận
+``đi đến phòng UAV'', parser xác định [A], Nav2 kết thúc SUCCEEDED với
+status~4/error~0. Audio lượt đạt dài $4.734$~s; thời gian từ transcript
+đến kết thúc nhiệm vụ là $13.519$~s. Các số này thuộc phiên bổ sung,
+không thay cho số liệu ba câu ngày 09/11/2026 ở bảng trước.
+
+Ảnh chụp nguyên cửa sổ terminal khi ứng dụng chạy, giữ cả lượt chưa đạt;
+video terminal liên tục dài $61.2$~s, $5$~fps, không biên soạn lại nội dung.
+Bằng chứng nằm trong \code{submission/evidence/figure7_live_acceptance.json},
+log gốc và event ROS cùng command\_id. WAV lưu local, kèm hash đối chiếu.
+Sau nhiệm vụ, TF đo được $(-9.067,3.497)$~m nằm trong vùng A; không coi
+đây là pose đúng thời điểm terminal action.
 
 \subsection{Video và tuyến đi đủ năm phòng}
 Video bàn giao dài khoảng \textbf{4 phút 26 giây}, $1920\times1080$,

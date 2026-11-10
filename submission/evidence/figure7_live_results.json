@@ -1,0 +1,84 @@
+[
+  {
+    "trial": 1,
+    "expected_sentence": "Đi đến phòng UAV.",
+    "expected_waypoints": [
+      "A"
+    ],
+    "started_wall_time": 1794276258.073309,
+    "input_source": "real microphone",
+    "passed": false,
+    "asr": {
+      "event": "TRANSCRIPT",
+      "message": "Đi đến phòng UAB",
+      "ready": true,
+      "busy": false,
+      "wall_time": 1794276263.7392755,
+      "recording_id": 2,
+      "duration": 3.5821875,
+      "rms": 0.3284739851951599,
+      "clipping_fraction": 0.07628020587978714,
+      "audio_file": "evidence/voice_demo/figure7_live_20261110_take2/audio/20261110_090421_61893b6e.wav",
+      "vad_speech_seconds": 2.4
+    },
+    "actual_transcript": "Đi đến phòng UAB",
+    "parsed": {
+      "type": "error",
+      "waypoints": [],
+      "error": {
+        "code": "UNKNOWN_REGION",
+        "message": "Không tìm thấy khu vực: phong uab"
+      },
+      "command_id": "5f1af10951044b3fbdced06dfbad98dd",
+      "transcript": "Đi đến phòng UAB"
+    },
+    "error": "Kết quả parser khác lộ trình câu thử; đã yêu cầu hủy nếu có goal"
+  },
+  {
+    "trial": 1,
+    "expected_sentence": "Đi đến phòng UAV.",
+    "expected_waypoints": [
+      "A"
+    ],
+    "started_wall_time": 1794276274.0093625,
+    "input_source": "real microphone",
+    "passed": true,
+    "asr": {
+      "event": "TRANSCRIPT",
+      "message": "đi đến phòng UAV",
+      "ready": true,
+      "busy": false,
+      "wall_time": 1794276280.839285,
+      "recording_id": 3,
+      "duration": 4.7341875,
+      "rms": 0.05819273740053177,
+      "clipping_fraction": 0.0,
+      "audio_file": "evidence/voice_demo/figure7_live_20261110_take2/audio/20261110_090438_58bfa1f0.wav",
+      "vad_speech_seconds": 2.24
+    },
+    "actual_transcript": "đi đến phòng UAV",
+    "parsed": {
+      "type": "single",
+      "waypoints": [
+        "A"
+      ],
+      "starts_from_source": false,
+      "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+      "transcript": "đi đến phòng UAV"
+    },
+    "navigation_terminal": {
+      "sequence": 35,
+      "state": "SUCCEEDED",
+      "event": "ALL_WAYPOINTS_REACHED",
+      "message": "Nhiệm vụ kết thúc",
+      "command_id": "07c4c75fc1774c1c96b90ed4b31ffeb2",
+      "waypoints": [
+        "A"
+      ],
+      "waypoint_index": 1,
+      "current_target": null,
+      "busy": false,
+      "wall_time": 1794276294.3580325
+    }
+  }
+]

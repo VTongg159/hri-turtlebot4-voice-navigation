@@ -32,6 +32,7 @@ class LiveTrial(Node):
     def __init__(self, folder):
         super().__init__("live_voice_trial")
         self.folder = folder
+        self.display_started_at = time.time()
         self.asr = []
         self.parsed = []
         self.navigation = []
@@ -71,8 +72,14 @@ class LiveTrial(Node):
                     )
                     + "\n"
                 )
+        if data.get("wall_time", time.time()) < self.display_started_at:
+            return  # Store latched history, but only print events from this live session.
         if kind == "asr" and data.get("event") in ASR_TERMINAL:
             print("\nASR:", data.get("event"), data.get("message"), flush=True)
+        if kind == "parsed":
+            print("\nPARSER JSON:", json.dumps(data, ensure_ascii=False), flush=True)
+        if kind == "navigation" and data.get("event") == "ACTION_TERMINAL":
+            print("\nNAV2 ACTION:", json.dumps(data, ensure_ascii=False), flush=True)
         if kind == "navigation" and data.get("event") in {
             "WAYPOINT_SUCCEEDED",
             "ALL_WAYPOINTS_REACHED",

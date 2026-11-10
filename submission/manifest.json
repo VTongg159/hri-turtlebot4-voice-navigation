@@ -177,37 +177,42 @@
       "bytes": 119407,
       "sha256": "6bfcba3cb00392fd03e01ee090aa2311f8b7e617576ee90d9e0d93a350d936be"
     },
-    "figures/figure7_push_to_talk_reconstructed.png": {
-      "bytes": 131996,
-      "sha256": "c8ea0ee7edff42700cde1afee54249d498e1c80099287a9335e375e670ce1113"
+    "figures/figure7_terminal_live.png": {
+      "bytes": 157030,
+      "sha256": "d50ee7ac080c229b5e939f2dd78ea0a637c1cf281abd67addc0a6f9159c19fa2"
     },
-    "figures/figure7_push_to_talk_reconstructed.txt": {
-      "bytes": 1485,
-      "sha256": "cb42a445bd84663d01427f33daec51baa096e395ca8113091c8257d12f1c3e9e"
+    "figures/figure7_ASR_parser_live.png": {
+      "bytes": 150128,
+      "sha256": "50ad918ad0c5ed32e97af7103eceeabf67c364017039f1601ffa21a5192e3789"
     },
-    "evidence/filmed_voice_terminal_excerpt.txt": {
-      "bytes": 612,
-      "sha256": "a34acb8d9776a2bc0fac32bc1e75b5bd21852622acc4303dd04e507bbd6b6cf2"
+    "figure7_terminal_live.mp4": {
+      "bytes": 944433,
+      "sha256": "0248e81fd847a17be07389f77c80c0ec73e791cd00d5d00a2ad441779a456569"
     },
-    "evidence/figure7_provenance.json": {
-      "bytes": 1213,
-      "sha256": "e73514570c9d496ad234e4082bfdd1f5f2b465eba0c7b8650e978c94627b5c80"
+    "evidence/figure7_terminal_live.log": {
+      "bytes": 3359,
+      "sha256": "12afac05f97ac632ac62bff7cbd50a25f19d0f5e1cf990cd9a812b8e47816087"
     },
-    "figures/figure7_voice_command_result.png": {
-      "bytes": 110059,
-      "sha256": "e367c8c5483c2cec25681718725090f0aaa4bafd2848823c2339f8f481875638"
+    "evidence/figure7_live_events.jsonl": {
+      "bytes": 15932,
+      "sha256": "5be9896f26e5feb8fc98a9a615c301f01194d4d011ad36da850018918aaaf572"
     },
-    "figures/figure7_voice_command_result.txt": {
-      "bytes": 1110,
-      "sha256": "f999af14a31f81af43efd645009b3364fae3186ba003128969c2603bedfdf532"
+    "evidence/figure7_live_results.json": {
+      "bytes": 2426,
+      "sha256": "ff4ee0828f03e6bbdecd8a5167fc93d782f511fc03fab3e2a47e7ca618022ceb"
     },
-    "evidence/figure7_command_trace.json": {
-      "bytes": 3169,
-      "sha256": "4cb5685da9e3835851786bc32286f0d7b372c043eb27de53112e381f81fb90b7"
+    "evidence/figure7_live_asr.jsonl": {
+      "bytes": 1653,
+      "sha256": "bbbc3aa88e378ab0189b21517cc7d0e241634a393bbe353ee2f86487cbcfff3a"
     },
-    "evidence/figure7_result_provenance.json": {
-      "bytes": 965,
-      "sha256": "95f5fde154d1a915b92d1f085179171e406e0625a614cd9f2d93f295599ca396"
+    "evidence/figure7_arrival_pose.json": {
+      "bytes": 228,
+      "sha256": "ff86162af4b3adc64eef6c2b4ce0d8d800620e7d671297160d5e5a9e5a23deae"
+    },
+    "evidence/figure7_live_acceptance.json": {
+      "bytes": 5496,
+      "sha256": "a34ba82c6ede6dbe2b8559685ac1049c569e1b379857fb42eb683ba35ba226cb"
     }
-  }
+  },
+  "figure7": "Direct screenshot and continuous terminal capture from a new real microphone/ASR/parser/Nav2 run on 2026-11-10; see evidence/figure7_live_acceptance.json"
 }

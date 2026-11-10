@@ -38,3 +38,11 @@ Các thời gian trên tính từ timestamp trạng thái đã publish trong cù
 ## Còn lại để nộp bài
 
 Phiên ba câu này có audio/log, chưa có video cùng lượt. Đã quay bổ sung một câu UAV và tour đủ5phòng: xem VIDEO_DEMO_RESULTS.md và ../submission/README.md. Source public được người dùng cho phép trong yêu cầu bàn giao; raw WAV vẫn giữ local. Sau dọn mã đã build và chạy lại87unit test đạt.
+
+## Bổ sung ngày10/11/2026 — ảnh terminal trực tiếp
+
+Đã chạy lại microphone thật để chụp Hình7. Phiên ghi hình có2 lượt: “Đi đến phòng UAB” bị UNKNOWN_REGION và không phát goal; lượt sau transcript “đi đến phòng UAV”, routeA, command_id07c4c75fc1774c1c96b90ed4b31ffeb2, Nav2 status4/error0 và SUCCEEDED. Audio lượt đạt4.734s; transcript→mission end13.519s. Có thêm một lượt microphone đạt trước phiên ghi hình này, giữ log riêng; không dùng lượt không có ảnh để thay ảnh trực tiếp.
+
+Ảnh và video được ghi từ X11 trong lúc ứng dụng chạy, không dàn lại nội dung terminal. Video bắt đầu trước người dùng thu âm,5fps,61.2s,1308×996. Đã kiểm tra giải mã toàn bộ. Ảnh giữ nguyên cả lượt chưa đạt trước đó. Sau nhiệm vụ, TF ở(-9.067,3.497)m nằm trong polygonA; đây là pose đo sau nhiệm vụ, không phải timestamp terminal chính xác.
+
+Bằng chứng public: ../submission/evidence/figure7_live_acceptance.json, figure7_live_results.json, figure7_live_events.jsonl, figure7_live_asr.jsonl, figure7_terminal_live.log. Ảnh ../submission/figures/figure7_terminal_live.png; video ../submission/figure7_terminal_live.mp4. WAV gốc lưu local tại evidence/voice_demo/figure7_live_20261110_take2/audio/.
