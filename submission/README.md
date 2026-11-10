@@ -13,6 +13,7 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 | Hình 14: khung video voice tại02:19 | [Ảnh PNG](figures/figure14_voice_video_UAV_succeeded.png), [nguồn và mốc video](evidence/figure14_video_frame.json) |
 | Hình 15: B/D/F/E và kết thúc ở sảnh | [Ảnh ghép PNG](figures/figure15_room_arrivals.png), [nguồn ảnh](evidence/figure15_sources.json) |
 | Measured trajectory: A→B→D→C→E→F | [trajectory_pairs.png](figures/trajectory_pairs.png), [TF/AMCL và results](evidence/trajectory_pairs/), [matplotlib script](../scripts/render_pairs_trajectory.py) |
+| RViz multi-waypoint A→C→D | [rviz_multiwaypoint_plan.png](figures/rviz_multiwaypoint_plan.png), [log và plan](evidence/rviz_multiwaypoint/) |
 | Ảnh phân vùng A–F | [pairslab_segmentation.png](maps/pairslab_segmentation.png) |
 | Polygon, tên, aliases và goal | [pairs_regions.yaml](config/pairs_regions.yaml) |
 | Kiểm tra sáu goal | [goals_validation.json](evidence/goals_validation.json) |

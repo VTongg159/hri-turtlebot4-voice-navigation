@@ -234,8 +234,8 @@
       "sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1"
     },
     "README.md": {
-      "bytes": 7037,
-      "sha256": "d437f091111b1ec986e344a1d17aba608bc1300d5db258db0a75f38c428e6638"
+      "bytes": 7186,
+      "sha256": "9a9ced30df9d899382cb6fbf6ce54d525d798ba47acc02cca0bb9cefdd40fbab"
     },
     "figures/figure15_room_arrivals.png": {
       "bytes": 976104,
@@ -276,6 +276,26 @@
     "evidence/trajectory_pairs/run.log": {
       "bytes": 2522,
       "sha256": "5b9493dc1cdf69204ff324f62df4ddcba02c87d3a92105ef68e5270a6bdd5c3b"
+    },
+    "figures/rviz_multiwaypoint_plan.png": {
+      "bytes": 113953,
+      "sha256": "e4f57f6e8dcf511cc0e0ba76261fb78767c5dbf590bb95b2597d9719b5916b9b"
+    },
+    "evidence/rviz_multiwaypoint/result.json": {
+      "bytes": 322,
+      "sha256": "8c35c38ff3bb855102d9efc8045de7d31a1176dc956eb2cd79e78d2c79c0b4d2"
+    },
+    "evidence/rviz_multiwaypoint/events.jsonl": {
+      "bytes": 49047,
+      "sha256": "9b9025e1bddf40f47023ed751cf29e586aa8d122046176deacf2038b620149fe"
+    },
+    "evidence/rviz_multiwaypoint/README.md": {
+      "bytes": 673,
+      "sha256": "26180b0a7aa6e946a13993910ed850e5d55a70fa5c4355775f0c3c42044f0ee8"
+    },
+    "evidence/rviz_multiwaypoint/capture.json": {
+      "bytes": 23121,
+      "sha256": "8336346c4d98e344bf9865e645969ff7ba87bd80a9ef9f25d30126ec08634814"
     }
   },
   "figure7": "Direct screenshot and continuous terminal capture from a new real microphone/ASR/parser/Nav2 run on 2026-11-10; see evidence/figure7_live_acceptance.json"
