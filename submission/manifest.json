@@ -232,6 +232,18 @@
     "figures/figure14_voice_video_original.png": {
       "bytes": 907671,
       "sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1"
+    },
+    "README.md": {
+      "bytes": 6141,
+      "sha256": "ee8264b93f557f41040eace292fff0fcb012f15446a0de23bd6946b7f4087fc7"
+    },
+    "figures/figure15_room_arrivals.png": {
+      "bytes": 976104,
+      "sha256": "41e335d8cb1f8a5b230fd2e25e3c59047ed2c54e6598aeb4f2ba63d15daf4915"
+    },
+    "evidence/figure15_sources.json": {
+      "bytes": 2084,
+      "sha256": "e9c847db2eaa30bee0b67177e63fa55b86f2d7ff8db536309bb4aade8d089d43"
     }
   },
   "figure7": "Direct screenshot and continuous terminal capture from a new real microphone/ASR/parser/Nav2 run on 2026-11-10; see evidence/figure7_live_acceptance.json"

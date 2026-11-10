@@ -1,0 +1,73 @@
+{
+  "kind": "report montage of five existing Gazebo screenshots; labels outside screenshots",
+  "output": "figures/figure15_room_arrivals.png",
+  "sha256": "41e335d8cb1f8a5b230fd2e25e3c59047ed2c54e6598aeb4f2ba63d15daf4915",
+  "sources": [
+    {
+      "file": "figures/arrival_B.png",
+      "sha256": "d8eac783ccf03411e5d5b67376bf5260e06b4c59c18d451af6dd96b370fde56c",
+      "panel": "(a) B — Manipulation Lab",
+      "output_bounds": [
+        24,
+        24,
+        1124,
+        824
+      ],
+      "pixel_identical": true
+    },
+    {
+      "file": "figures/arrival_D.png",
+      "sha256": "1b77ee658b36225c0bec1f9d57c0c93a8421e298cd6e697a2176a55ace6f7431",
+      "panel": "(b) D — HRI Lab / Unitree G1",
+      "output_bounds": [
+        1148,
+        24,
+        2248,
+        824
+      ],
+      "pixel_identical": true
+    },
+    {
+      "file": "figures/arrival_F.png",
+      "sha256": "58edd6b4e8303a818cda1a7a26e75231ef9cf79fafa08d8f26bfeb6d60b5c797",
+      "panel": "(c) F — TurtleBot Lab",
+      "output_bounds": [
+        24,
+        904,
+        1124,
+        1704
+      ],
+      "pixel_identical": true
+    },
+    {
+      "file": "figures/arrival_E.png",
+      "sha256": "813f81aa292e7559ffc104f2a4c1c1e0f6820381ef5f7aa3b33b6f63d5c3ba42",
+      "panel": "(d) E — Quadruped Lab / Unitree Go2",
+      "output_bounds": [
+        1148,
+        904,
+        2248,
+        1704
+      ],
+      "pixel_identical": true
+    },
+    {
+      "file": "figures/tour_complete.png",
+      "sha256": "bb17a22a212066938106a2193b170b456f7eff3846769f848423e85da9af2838",
+      "panel": "(e) C — Lobby / Tour complete",
+      "output_bounds": [
+        586,
+        1784,
+        1686,
+        2584
+      ],
+      "pixel_identical": true
+    }
+  ],
+  "navigation_evidence": [
+    "evidence/navigation_results.json",
+    "evidence/navigation_resume_results.json",
+    "evidence/coverage.json"
+  ],
+  "note": "Tour uses keyboard transcripts; E and final C belong to the resumed tour after localization recovery. SUCCEEDED is recorded in ROS results, not overlaid onto screenshots."
+}

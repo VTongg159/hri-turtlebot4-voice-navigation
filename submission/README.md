@@ -11,6 +11,7 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 | Hình 7: chụp trực tiếp lượt chạy ngày10/11/2026 | [Terminal sau khi đến đích](figures/figure7_terminal_live.png), [ASR/parser](figures/figure7_ASR_parser_live.png), [video terminal](figure7_terminal_live.mp4), [log gốc](evidence/figure7_terminal_live.log) |
 | Hình 13: RViz sau khi đến phòng UAV | [Ảnh RViz trực tiếp](figures/figure13_rviz_UAV_succeeded.png), [đối chiếu ROS](evidence/figure13_rviz_verification.json) |
 | Hình 14: khung video voice tại02:19 | [Ảnh PNG](figures/figure14_voice_video_UAV_succeeded.png), [nguồn và mốc video](evidence/figure14_video_frame.json) |
+| Hình 15: B/D/F/E và kết thúc ở sảnh | [Ảnh ghép PNG](figures/figure15_room_arrivals.png), [nguồn ảnh](evidence/figure15_sources.json) |
 | Ảnh phân vùng A–F | [pairslab_segmentation.png](maps/pairslab_segmentation.png) |
 | Polygon, tên, aliases và goal | [pairs_regions.yaml](config/pairs_regions.yaml) |
 | Kiểm tra sáu goal | [goals_validation.json](evidence/goals_validation.json) |
