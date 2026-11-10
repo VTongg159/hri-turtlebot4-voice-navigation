@@ -11,3 +11,4 @@ src/tb4_voice_navigation/models/** -text -diff
 
 # Preserve the original terminal log byte-for-byte, including CRLF/prompts.
 submission/evidence/figure7_terminal_live.log -text -diff
+submission/evidence/unknown_region_voice/terminal.log -text -diff
