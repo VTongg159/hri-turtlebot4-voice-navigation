@@ -12,7 +12,7 @@
   "actual_transcript": "Đi đến phòng UAV",
   "navigation_state": "SUCCEEDED",
   "frame": "figures/figure14_voice_video_UAV_succeeded.png",
-  "frame_sha256": "ff7c3af9091b7d2c321bb50397aaa93ca8a8551806dab78f40ef50d326cbfaa4",
+  "frame_sha256": "384a6382727db19e2b4786d5b3a48735af978584f4ea2ac7f4f6080657c94742",
   "extraction": "ffmpeg -ss 139 -i PAIRS_Lab_Demo_1080p.mp4 -frames:v 1 figure14_voice_video_UAV_succeeded.png",
   "original_frame": "figures/figure14_voice_video_original.png",
   "original_frame_sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1",

@@ -222,12 +222,12 @@
       "sha256": "b29c8ba481e572a6ba9bb004c3552803307a7e472c7f7084d12d4249275c4b7a"
     },
     "figures/figure14_voice_video_UAV_succeeded.png": {
-      "bytes": 626547,
-      "sha256": "ff7c3af9091b7d2c321bb50397aaa93ca8a8551806dab78f40ef50d326cbfaa4"
+      "bytes": 622673,
+      "sha256": "384a6382727db19e2b4786d5b3a48735af978584f4ea2ac7f4f6080657c94742"
     },
     "evidence/figure14_video_frame.json": {
       "bytes": 1498,
-      "sha256": "2cb9758f885ee84daf1b17e2f2b9397a026b75a46c7e21d82a3e470588d53479"
+      "sha256": "16e0bb58a80a74f7390153f92bef474756087d89ef82251719356e7169b0f526"
     },
     "figures/figure14_voice_video_original.png": {
       "bytes": 907671,
