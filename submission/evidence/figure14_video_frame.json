@@ -6,12 +6,36 @@
   "timestamp_s": 139,
   "timestamp": "02:19",
   "voice_section_start": "01:07",
-  "source_kind": "frame extracted unchanged from the existing edited demonstration video; Gazebo window plus ROS telemetry panel already present in that video",
+  "source_kind": "restyled presentation of the same 02:19 video frame; original Gazebo pixels preserved, secondary panel monochrome",
   "not_a_terminal_screenshot": true,
   "command_id": "00e17b89ae0a431b93682c6d1cbd7c0b",
   "actual_transcript": "Đi đến phòng UAV",
   "navigation_state": "SUCCEEDED",
   "frame": "figures/figure14_voice_video_UAV_succeeded.png",
-  "frame_sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1",
-  "extraction": "ffmpeg -ss 139 -i PAIRS_Lab_Demo_1080p.mp4 -frames:v 1 figure14_voice_video_UAV_succeeded.png"
+  "frame_sha256": "ff7c3af9091b7d2c321bb50397aaa93ca8a8551806dab78f40ef50d326cbfaa4",
+  "extraction": "ffmpeg -ss 139 -i PAIRS_Lab_Demo_1080p.mp4 -frames:v 1 figure14_voice_video_UAV_succeeded.png",
+  "original_frame": "figures/figure14_voice_video_original.png",
+  "original_frame_sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1",
+  "restyled": true,
+  "output_dimensions": [
+    1920,
+    930
+  ],
+  "native_application_crop": {
+    "source_bounds": [
+      0,
+      75,
+      1280,
+      1005
+    ],
+    "output_bounds": [
+      0,
+      0,
+      1280,
+      930
+    ],
+    "pixel_identical": true
+  },
+  "secondary_panel": "white background, black/gray text, grayscale of the original map crop",
+  "displayed_pose_source": "(-8.91, 3.44) m displayed in the original video frame; not substituted from a later trial"
 }
