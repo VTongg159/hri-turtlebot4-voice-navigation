@@ -234,8 +234,8 @@
       "sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1"
     },
     "README.md": {
-      "bytes": 6476,
-      "sha256": "326afe7be7e1c54bba6ceaabd6bed5e92d7c020e6e910495307c58b5cb59e4f5"
+      "bytes": 7037,
+      "sha256": "d437f091111b1ec986e344a1d17aba608bc1300d5db258db0a75f38c428e6638"
     },
     "figures/figure15_room_arrivals.png": {
       "bytes": 976104,
@@ -248,6 +248,34 @@
     "evidence/video_style.json": {
       "bytes": 2009,
       "sha256": "58a7bf9a8f5aec8355f6c90146f2f53bde94f52bed130f2c79326f89f797944e"
+    },
+    "figures/trajectory_pairs.png": {
+      "bytes": 202865,
+      "sha256": "2a4f654d5d528efb17bc445d928542639b21970c9ee278b8e5c005bf62a65ca6"
+    },
+    "evidence/trajectory_pairs/validation.json": {
+      "bytes": 410,
+      "sha256": "3e479bb4a42b7c10bdddf7aa96ea5e51ecf555fabc24d946daccd3c2995d2a91"
+    },
+    "evidence/trajectory_pairs/amcl_samples.jsonl": {
+      "bytes": 103867,
+      "sha256": "dd5f3554c0703fcb79e14f3b576eb4bc623243774b1a1e21fc8dc5f1c30cf8c2"
+    },
+    "evidence/trajectory_pairs/tf_samples.jsonl": {
+      "bytes": 168664,
+      "sha256": "97f68dc811988fdc3be9cfa32d656969660be0144eb23735a825a9f8dd5192c9"
+    },
+    "evidence/trajectory_pairs/figure_receipt.json": {
+      "bytes": 1732,
+      "sha256": "bd23fdafeec916986ab5a5e584513e0924ee38c2582a1337bac480e0f7997e7a"
+    },
+    "evidence/trajectory_pairs/results.json": {
+      "bytes": 1994,
+      "sha256": "86f6c92c326475ab33386783c07b2837d6237507f03e7131786ab59c2718aab1"
+    },
+    "evidence/trajectory_pairs/run.log": {
+      "bytes": 2522,
+      "sha256": "5b9493dc1cdf69204ff324f62df4ddcba02c87d3a92105ef68e5270a6bdd5c3b"
     }
   },
   "figure7": "Direct screenshot and continuous terminal capture from a new real microphone/ASR/parser/Nav2 run on 2026-11-10; see evidence/figure7_live_acceptance.json"

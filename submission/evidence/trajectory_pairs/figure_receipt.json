@@ -1,0 +1,71 @@
+{
+  "figure": "figures/trajectory_pairs.png",
+  "sha256": "2a4f654d5d528efb17bc445d928542639b21970c9ee278b8e5c005bf62a65ca6",
+  "source": "Measured map->base_link TF in a new Nav2 run; not planned paths or video tracing",
+  "background": "maps/pairslab_segmentation.png",
+  "route": [
+    "A",
+    "B",
+    "D",
+    "C",
+    "E",
+    "F"
+  ],
+  "total_samples": 957,
+  "segments": [
+    {
+      "goal": "A",
+      "samples": 55,
+      "measured_length_m": 4.236366972118484,
+      "discontinuities": 0
+    },
+    {
+      "goal": "B",
+      "samples": 181,
+      "measured_length_m": 12.99223119221191,
+      "discontinuities": 0
+    },
+    {
+      "goal": "D",
+      "samples": 182,
+      "measured_length_m": 12.969507680486029,
+      "discontinuities": 0
+    },
+    {
+      "goal": "C",
+      "samples": 169,
+      "measured_length_m": 11.330990594936406,
+      "discontinuities": 0
+    },
+    {
+      "goal": "E",
+      "samples": 153,
+      "measured_length_m": 9.24359115669727,
+      "discontinuities": 0
+    },
+    {
+      "goal": "F",
+      "samples": 217,
+      "measured_length_m": 18.122308116133873,
+      "discontinuities": 0
+    }
+  ],
+  "map_geometry": {
+    "width": 580,
+    "height": 420,
+    "resolution": 0.05,
+    "origin": [
+      -14.5,
+      -10.5,
+      0.0
+    ]
+  },
+  "background_map_viewport": {
+    "left": 373.07142857142827,
+    "top": 247.49999999999977,
+    "width": 1503.8571428571433,
+    "height": 1089.0000000000002
+  },
+  "formula": "u=cos(theta)*(x-x0)+sin(theta)*(y-y0); w=-sin(theta)*(x-x0)+cos(theta)*(y-y0); c=u/r-0.5; v=H-0.5-w/r",
+  "editing": "Original background footer replaced with legend; exact map pixels retained underneath trajectory. No smoothing; gaps >0.5m or >1s broken."
+}

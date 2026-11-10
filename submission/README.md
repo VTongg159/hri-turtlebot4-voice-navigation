@@ -12,6 +12,7 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 | Hình 13: RViz sau khi đến phòng UAV | [Ảnh RViz trực tiếp](figures/figure13_rviz_UAV_succeeded.png), [đối chiếu ROS](evidence/figure13_rviz_verification.json) |
 | Hình 14: khung video voice tại02:19 | [Ảnh PNG](figures/figure14_voice_video_UAV_succeeded.png), [nguồn và mốc video](evidence/figure14_video_frame.json) |
 | Hình 15: B/D/F/E và kết thúc ở sảnh | [Ảnh ghép PNG](figures/figure15_room_arrivals.png), [nguồn ảnh](evidence/figure15_sources.json) |
+| Measured trajectory: A→B→D→C→E→F | [trajectory_pairs.png](figures/trajectory_pairs.png), [TF/AMCL và results](evidence/trajectory_pairs/), [matplotlib script](../scripts/render_pairs_trajectory.py) |
 | Ảnh phân vùng A–F | [pairslab_segmentation.png](maps/pairslab_segmentation.png) |
 | Polygon, tên, aliases và goal | [pairs_regions.yaml](config/pairs_regions.yaml) |
 | Kiểm tra sáu goal | [goals_validation.json](evidence/goals_validation.json) |
@@ -50,3 +51,5 @@ Hình13 chụp RViz đang chạy sau nhiệm vụ thật trong Hình7. Đường
 Hình14 lấy khung02:19 của video demo09/11/2026, trong phần voice bắt đầu01:07. Bản dành cho báo cáo giữ nguyên pixel và tông màu của cửa sổ Gazebo, bố trí lại bảng phụ sang trắng–đen và chuyển bản đồ phụ sang grayscale; transcript/pose/trạng thái giữ đúng khung gốc. [Khung gốc để đối chiếu](figures/figure14_voice_video_original.png). Không phải ảnh terminal. Có thể tạo lại bằng `python scripts/style_figure14.py`.
 
 Video demo đã cập nhật bảng phụ trắng–đen, nhãn kỹ thuật tiếng Anh và chapter titles. Transcript tiếng Việt giữ nguyên ASR thực tế; audio AAC giữ nguyên từng packet. Xem [video_style.json](evidence/video_style.json) để đối chiếu bản gốc và cách ánh xạ ROS events vào timeline.
+
+Trajectory dùng lượt Nav2 riêng mới, ghi map→base_link TF 5 Hz và AMCL, đúng A→B→D→C→E→F. Sáu goal đều SUCCEEDED và pose cuối nằm trong vùng tương ứng. Đây là lượt đo riêng, khác thứ tự tour trong video. Tạo lại hình bằng `python scripts/render_pairs_trajectory.py` từ dữ liệu public.

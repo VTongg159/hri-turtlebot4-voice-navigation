@@ -1,0 +1,16 @@
+{
+  "navigation": "6/6 SUCCEEDED, arrival inside matching semantic mask",
+  "samples": 957,
+  "coordinate_roundtrip": "PASS, tolerance 1e-10 m",
+  "occupied_cell_centres": 0,
+  "sample_frequency": "5 Hz simulation-time timer; stale TF older than 1s excluded",
+  "route": [
+    "A",
+    "B",
+    "D",
+    "C",
+    "E",
+    "F"
+  ],
+  "input": "Native Nav2 goals in a new dedicated trial; microphone not used"
+}
