@@ -1,0 +1,17 @@
+{
+  "figure": "Figure 14",
+  "source_video": "PAIRS_Lab_Demo_1080p.mp4",
+  "source_video_sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
+  "source_trial_date": "2026-11-09",
+  "timestamp_s": 139,
+  "timestamp": "02:19",
+  "voice_section_start": "01:07",
+  "source_kind": "frame extracted unchanged from the existing edited demonstration video; Gazebo window plus ROS telemetry panel already present in that video",
+  "not_a_terminal_screenshot": true,
+  "command_id": "00e17b89ae0a431b93682c6d1cbd7c0b",
+  "actual_transcript": "Đi đến phòng UAV",
+  "navigation_state": "SUCCEEDED",
+  "frame": "figures/figure14_voice_video_UAV_succeeded.png",
+  "frame_sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1",
+  "extraction": "ffmpeg -ss 139 -i PAIRS_Lab_Demo_1080p.mp4 -frames:v 1 figure14_voice_video_UAV_succeeded.png"
+}

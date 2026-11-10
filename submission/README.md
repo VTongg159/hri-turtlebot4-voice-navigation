@@ -10,6 +10,7 @@ Source public: [VTongg159/hri-turtlebot4-voice-navigation](https://github.com/VT
 | Hình 6: quy ước pixel và map | [PNG](figures/pairs_lab_pixel_map_coordinates.png), [SVG](figures/pairs_lab_pixel_map_coordinates.svg) |
 | Hình 7: chụp trực tiếp lượt chạy ngày10/11/2026 | [Terminal sau khi đến đích](figures/figure7_terminal_live.png), [ASR/parser](figures/figure7_ASR_parser_live.png), [video terminal](figure7_terminal_live.mp4), [log gốc](evidence/figure7_terminal_live.log) |
 | Hình 13: RViz sau khi đến phòng UAV | [Ảnh RViz trực tiếp](figures/figure13_rviz_UAV_succeeded.png), [đối chiếu ROS](evidence/figure13_rviz_verification.json) |
+| Hình 14: khung video voice tại02:19 | [Ảnh PNG](figures/figure14_voice_video_UAV_succeeded.png), [nguồn và mốc video](evidence/figure14_video_frame.json) |
 | Ảnh phân vùng A–F | [pairslab_segmentation.png](maps/pairslab_segmentation.png) |
 | Polygon, tên, aliases và goal | [pairs_regions.yaml](config/pairs_regions.yaml) |
 | Kiểm tra sáu goal | [goals_validation.json](evidence/goals_validation.json) |
@@ -44,3 +45,5 @@ Giữ cấu trúc `config/` và `maps/` khi tải metadata để đường dẫn
 Hình7 mới là ảnh chụp trực tiếp cửa sổ terminal khi người dùng nói qua microphone thật ngày10/11/2026. Bộ ghi hình được bật trước lần thu âm; ảnh/video giữ nguyên bytes, có JSON parser và action terminal Nav2 cùng command_id. Phiên ghi hình có2 lượt: ASR nhận UAB→UNKNOWN_REGION (không gửi goal), sau đó nhận đúng UAV→A→SUCCEEDED. Các ảnh biên soạn lại đã được rút khỏi bộ bàn giao. Xem evidence/figure7_live_acceptance.json để đối chiếu thời điểm, WAV hash, event và hash ảnh/video.
 
 Hình13 chụp RViz đang chạy sau nhiệm vụ thật trong Hình7. Đường xanh là /voice/planned_path (đường lập kế hoạch được giữ lại), không phải quỹ đạo đã đo. Robot TF hiện tại nằm trong A. Nhãn SUCCEEDED và command_id được node marker cập nhật từ /voice/navigation_status; không chèn chữ lên ảnh sau khi chụp. Cấu hình tái mở: src/tb4_voice_navigation/rviz/pairs_lab_report.rviz.
+
+Hình14 trích nguyên khung tại02:19 của video demo09/11/2026, trong phần voice bắt đầu01:07. Ảnh có cửa sổ Gazebo và bảng telemetry ROS vốn có trong bản video, không phải ảnh terminal. Khung cho thấy transcript UAV, SUCCEEDED và robot ởA.

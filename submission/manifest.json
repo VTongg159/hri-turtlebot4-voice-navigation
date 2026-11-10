@@ -220,6 +220,14 @@
     "evidence/figure13_rviz_verification.json": {
       "bytes": 1811,
       "sha256": "b29c8ba481e572a6ba9bb004c3552803307a7e472c7f7084d12d4249275c4b7a"
+    },
+    "figures/figure14_voice_video_UAV_succeeded.png": {
+      "bytes": 907671,
+      "sha256": "9152d180a8497868653480a557080292c166549477b77325322940f377be6bf1"
+    },
+    "evidence/figure14_video_frame.json": {
+      "bytes": 877,
+      "sha256": "69bd1bc18ded7bc5d5292bb53c88a247c3b419361bb1f19f632f9f6108453aa6"
     }
   },
   "figure7": "Direct screenshot and continuous terminal capture from a new real microphone/ASR/parser/Nav2 run on 2026-11-10; see evidence/figure7_live_acceptance.json"
