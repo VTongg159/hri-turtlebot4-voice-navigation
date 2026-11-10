@@ -1,13 +1,13 @@
 {
   "status": "PASS",
-  "video": "deliverables/pairslab_demo_20261109/PAIRS_Lab_Demo_1080p.mp4",
+  "video": "PAIRS_Lab_Demo_1080p.mp4",
   "duration_s": 265.754362,
   "resolution": [
     1920,
     1080
   ],
   "capture_fps": 15,
-  "sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
+  "sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456",
   "decode_check": "PASS",
   "visited": [
     "A",
@@ -348,5 +348,7 @@
         }
       ]
     }
-  ]
+  ],
+  "original_video_sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
+  "style_receipt": "evidence/video_style.json"
 }

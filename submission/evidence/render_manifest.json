@@ -1,6 +1,6 @@
 {
-  "final_video": "deliverables/pairslab_demo_20261109/PAIRS_Lab_Demo_1080p.mp4",
-  "final_sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
+  "final_video": "PAIRS_Lab_Demo_1080p.mp4",
+  "final_sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456",
   "resolution": [
     1920,
     1080
@@ -431,44 +431,46 @@
   "chapters": [
     {
       "start": 0.0,
-      "title": "Giới thiệu PAIRS Lab và 5 khu nghiên cứu"
+      "title": "PAIRS Lab — Research environment"
     },
     {
       "start": 67.133333,
-      "title": "T15: giọng nói thật → phòng UAV"
+      "title": "T15 — Voice navigation to UAV Lab"
     },
     {
       "start": 145.066666,
-      "title": "Tour Nav2 bằng văn bản, tăng tốc 2x"
+      "title": "Nav2 tour — Keyboard input, 2x playback"
     },
     {
       "start": 146.37639092694855,
-      "title": "Nav2 → B / Tay máy"
+      "title": "Nav2 — B / Manipulation Lab"
     },
     {
       "start": 169.42623554956054,
-      "title": "Nav2 → D / HRI G1"
+      "title": "Nav2 — D / HRI Lab, Unitree G1"
     },
     {
       "start": 194.3805576492462,
-      "title": "Nav2 → C / Sảnh"
+      "title": "Nav2 — C / Lobby"
     },
     {
       "start": 217.9045451809082,
-      "title": "Nav2 → F / TurtleBot"
+      "title": "Nav2 — F / TurtleBot Lab"
     },
     {
       "start": 233.33333299999998,
-      "title": "Nối sau mất định vị và cập nhật AMCL; bản có cắt dựng"
+      "title": "Tour resumed after AMCL update — Edited transition"
     },
     {
       "start": 234.668241246994,
-      "title": "Nav2 → E / Go2"
+      "title": "Nav2 — E / Quadruped Lab, Unitree Go2"
     },
     {
       "start": 243.57696996575163,
-      "title": "Nav2 → C / Sảnh"
+      "title": "Nav2 — C / Lobby"
     }
   ],
-  "decode_check": "PASS"
+  "decode_check": "PASS",
+  "original_video_sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
+  "style_receipt": "evidence/video_style.json"
 }

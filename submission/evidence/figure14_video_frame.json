@@ -37,5 +37,6 @@
     "pixel_identical": true
   },
   "secondary_panel": "white background, black/gray text, grayscale of the original map crop",
-  "displayed_pose_source": "(-8.91, 3.44) m displayed in the original video frame; not substituted from a later trial"
+  "displayed_pose_source": "(-8.91, 3.44) m displayed in the original video frame; not substituted from a later trial",
+  "source_video_version": "https://github.com/VTongg159/hri-turtlebot4-voice-navigation/blob/451198d/submission/PAIRS_Lab_Demo_1080p.mp4"
 }

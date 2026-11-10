@@ -18,23 +18,36 @@ def main():
     folder = ROOT / "submission/figures"
     original = folder / "figure14_voice_video_original.png"
     video = ROOT / "submission/PAIRS_Lab_Demo_1080p.mp4"
-    subprocess.run(
-        [
-            "ffmpeg",
-            "-hide_banner",
-            "-loglevel",
-            "error",
-            "-y",
-            "-ss",
-            "139",
-            "-i",
-            str(video),
-            "-frames:v",
-            "1",
-            str(original),
-        ],
-        check=True,
-    )
+    proof_path = ROOT / "submission/evidence/figure14_video_frame.json"
+    expected = json.loads(proof_path.read_text())
+    if original.exists():
+        assert (
+            hashlib.sha256(original.read_bytes()).hexdigest() == expected["original_frame_sha256"]
+        )
+    else:
+        archive = ROOT / "deliverables/pairslab_demo_20261109/PAIRS_Lab_Demo_original_style.mp4"
+        if archive.exists():
+            video = archive
+        assert hashlib.sha256(video.read_bytes()).hexdigest() == expected["source_video_sha256"], (
+            "Figure 14 needs the original video version listed in its evidence JSON"
+        )
+        subprocess.run(
+            [
+                "ffmpeg",
+                "-hide_banner",
+                "-loglevel",
+                "error",
+                "-y",
+                "-ss",
+                "139",
+                "-i",
+                str(video),
+                "-frames:v",
+                "1",
+                str(original),
+            ],
+            check=True,
+        )
     source = Image.open(original).convert("RGB")
     assert source.size == (1920, 1080)
     # These are the actual application pixels inside the video composition.

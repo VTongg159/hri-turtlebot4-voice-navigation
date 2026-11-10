@@ -48,3 +48,5 @@ Hình7 mới là ảnh chụp trực tiếp cửa sổ terminal khi người dù
 Hình13 chụp RViz đang chạy sau nhiệm vụ thật trong Hình7. Đường xanh là /voice/planned_path (đường lập kế hoạch được giữ lại), không phải quỹ đạo đã đo. Robot TF hiện tại nằm trong A. Nhãn SUCCEEDED và command_id được node marker cập nhật từ /voice/navigation_status; không chèn chữ lên ảnh sau khi chụp. Cấu hình tái mở: src/tb4_voice_navigation/rviz/pairs_lab_report.rviz.
 
 Hình14 lấy khung02:19 của video demo09/11/2026, trong phần voice bắt đầu01:07. Bản dành cho báo cáo giữ nguyên pixel và tông màu của cửa sổ Gazebo, bố trí lại bảng phụ sang trắng–đen và chuyển bản đồ phụ sang grayscale; transcript/pose/trạng thái giữ đúng khung gốc. [Khung gốc để đối chiếu](figures/figure14_voice_video_original.png). Không phải ảnh terminal. Có thể tạo lại bằng `python scripts/style_figure14.py`.
+
+Video demo đã cập nhật bảng phụ trắng–đen, nhãn kỹ thuật tiếng Anh và chapter titles. Transcript tiếng Việt giữ nguyên ASR thực tế; audio AAC giữ nguyên từng packet. Xem [video_style.json](evidence/video_style.json) để đối chiếu bản gốc và cách ánh xạ ROS events vào timeline.

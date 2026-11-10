@@ -1,0 +1,58 @@
+{
+  "original_sha256": "ebf83f13368b8f8f926ec513d9b38466965fac34c8729defca41a6889c34a3dd",
+  "output_sha256": "402704a462478539644155a7bdc213fcbb6ddb3a55eb76859e29a09a2b53e456",
+  "original_video": "https://github.com/VTongg159/hri-turtlebot4-voice-navigation/blob/451198d/submission/PAIRS_Lab_Demo_1080p.mp4",
+  "fps": 15.0,
+  "frames": 3986,
+  "application_pixels": "Original decoded Gazebo region copied unchanged before H.264 re-encoding",
+  "map": "Original per-frame map crop converted to grayscale; marker and recorded trajectory preserved",
+  "labels": "English technical terminology; verbatim Vietnamese ASR transcript",
+  "status_source": "Same-session ROS event wall_time mapped through original edit segments; label refresh 4 Hz",
+  "audio": "Original AAC packets copied unchanged; SHA256 verified",
+  "audio_packet_hash": "SHA256=30caf76d38cb2ac46217a6801a80c5774f81db3e0dc21ce406073d1d63b59f50",
+  "timeline": "Original cuts and 1x voice / 2x keyboard tour timing retained",
+  "chapters": [
+    {
+      "start": 0.0,
+      "title": "PAIRS Lab — Research environment"
+    },
+    {
+      "start": 67.133333,
+      "title": "T15 — Voice navigation to UAV Lab"
+    },
+    {
+      "start": 145.066666,
+      "title": "Nav2 tour — Keyboard input, 2x playback"
+    },
+    {
+      "start": 146.37639092694855,
+      "title": "Nav2 — B / Manipulation Lab"
+    },
+    {
+      "start": 169.42623554956054,
+      "title": "Nav2 — D / HRI Lab, Unitree G1"
+    },
+    {
+      "start": 194.3805576492462,
+      "title": "Nav2 — C / Lobby"
+    },
+    {
+      "start": 217.9045451809082,
+      "title": "Nav2 — F / TurtleBot Lab"
+    },
+    {
+      "start": 233.33333299999998,
+      "title": "Tour resumed after AMCL update — Edited transition"
+    },
+    {
+      "start": 234.668241246994,
+      "title": "Nav2 — E / Quadruped Lab, Unitree Go2"
+    },
+    {
+      "start": 243.57696996575163,
+      "title": "Nav2 — C / Lobby"
+    }
+  ],
+  "decode_check": "PASS",
+  "duration_s": 265.754
+}
